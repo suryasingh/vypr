@@ -130,7 +130,7 @@ export function DemoSection() {
             </div>
             <div>
               <h3 className="text-lg font-medium text-white">With VibePay (MoR)</h3>
-              <p className="text-sm text-gray-500">Sell credits globally in minutes</p>
+              <p className="text-sm text-gray-500">Build your app. Serve users globally.</p>
             </div>
           </div>
 
@@ -151,15 +151,15 @@ export function DemoSection() {
                     &apos;@vibepay/sdk&apos;
                   </span>
                   {"\n\n"}
-                  <span className="text-gray-500">{`// Sell credits globally`}</span>
+                  <span className="text-gray-500">{`// Charge credits for usage`}</span>
                   {"\n"}
                   <span className="text-purple-400">const</span>{" "}
-                  <span className="text-cyan-400">sale</span>{" "}
+                  <span className="text-cyan-400">result</span>{" "}
                   <span className="text-white">=</span>{" "}
                   <span className="text-purple-400">await</span>{" "}
                   <span className="text-cyan-400">vibe</span>
                   <span className="text-white">.</span>
-                  <span className="text-yellow-400">sellCredits</span>
+                  <span className="text-yellow-400">charge</span>
                   <span className="text-white">(&#123;</span>
                   {"\n  "}
                   <span className="text-cyan-400">userId</span>
@@ -169,14 +169,14 @@ export function DemoSection() {
                   <span className="text-cyan-400">id</span>
                   <span className="text-white">,</span>
                   {"\n  "}
-                  <span className="text-cyan-400">credits</span>
+                  <span className="text-cyan-400">amount</span>
                   <span className="text-white">:</span>{" "}
-                  <span className="text-orange-400">500</span>
+                  <span className="text-orange-400">25</span>
                   <span className="text-white">,</span>
                   {"\n  "}
-                  <span className="text-cyan-400">price</span>
+                  <span className="text-cyan-400">description</span>
                   <span className="text-white">:</span>{" "}
-                  <span className="text-orange-400">29.99</span>
+                  <span className="text-green-400">&apos;AI image generation&apos;</span>
                   {"\n"}
                   <span className="text-white">&#125;)</span>
                   {"\n\n"}

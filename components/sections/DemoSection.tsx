@@ -1,0 +1,253 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 60 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 },
+};
+
+export function DemoSection() {
+  return (
+    <section className="py-28 relative border-t border-border/40 px-14">
+      {/* Section Header */}
+      <motion.div
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="text-center mb-20"
+      >
+        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+          Credits + global sales. Without the nightmare.
+        </h2>
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          Building credit systems is hard. Adding global tax compliance makes it impossible.
+        </p>
+      </motion.div>
+
+      {/* Comparison Grid */}
+      <div className="grid lg:grid-cols-2 gap-12 items-start">
+        {/* Left side - Traditional approach */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="space-y-6"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 bg-red-500/10 border border-red-500/20 flex items-center justify-center">
+              <span className="text-red-400 text-xl">⚠️</span>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-white">
+                Building in-house + global sales
+              </h3>
+              <p className="text-sm text-gray-500">The compliance nightmare</p>
+            </div>
+          </div>
+
+          {/* Development phases */}
+          <div className="bg-white/[0.02] border border-white/10 p-6 space-y-4">
+            <h4 className="font-medium text-white text-sm mb-4">
+              What you need to build:
+            </h4>
+            {[
+              { task: "Payment system + credit logic", time: "8-12 weeks" },
+              { task: "Global tax calculation", time: "10-16 weeks" },
+              { task: "Legal compliance setup", time: "12+ weeks" },
+              { task: "Gamification features", time: "6-8 weeks" },
+              { task: "Multi-currency & reporting", time: "4-6 weeks" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0"
+              >
+                <span className="text-sm text-gray-300">{item.task}</span>
+                <span className="text-xs text-gray-500 font-mono">
+                  {item.time}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* What you handle */}
+          <div className="space-y-3">
+            <h4 className="font-medium text-white text-sm">
+              Ongoing compliance burden:
+            </h4>
+            <div className="space-y-2">
+              {[
+                "Tax registration in multiple countries",
+                "Monthly tax filings & returns",
+                "Legal liability for mistakes",
+                "Currency & banking complexity",
+                "Constant regulation changes",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center space-x-3 text-sm">
+                  <div className="w-1.5 h-1.5 bg-red-400 rounded-full shrink-0" />
+                  <span className="text-gray-400">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Total cost */}
+          <div className="bg-red-500/5 border border-red-500/10 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-medium text-white text-sm">
+                  Total timeline + cost
+                </div>
+                <div className="text-xs text-gray-400">
+                  Plus ongoing legal risk
+                </div>
+              </div>
+              <div className="text-right">
+                <div className="text-lg font-medium text-red-400">
+                  12+ months
+                </div>
+                <div className="text-xs text-gray-500">$300K+ investment</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Right side - With VibePay */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="space-y-6"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 bg-green-500/10 border border-green-500/20 flex items-center justify-center">
+              <span className="text-green-400 text-xl">⚡</span>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-white">With VibePay (MoR)</h3>
+              <p className="text-sm text-gray-500">Sell credits globally in minutes</p>
+            </div>
+          </div>
+
+          {/* Simple implementation */}
+          <div className="bg-white/[0.02] border border-white/10 p-6 space-y-4">
+            <h4 className="font-medium text-white text-sm mb-4">
+              Your implementation:
+            </h4>
+            <div className="space-y-4">
+              <pre className="text-sm font-mono leading-relaxed">
+                <code>
+                  <span className="text-purple-400">import</span>{" "}
+                  <span className="text-white">&#123;</span>{" "}
+                  <span className="text-cyan-400">VibePay</span>{" "}
+                  <span className="text-white">&#125;</span>{" "}
+                  <span className="text-purple-400">from</span>{" "}
+                  <span className="text-green-400">
+                    &apos;@vibepay/sdk&apos;
+                  </span>
+                  {"\n\n"}
+                  <span className="text-gray-500">{`// Sell credits globally`}</span>
+                  {"\n"}
+                  <span className="text-purple-400">const</span>{" "}
+                  <span className="text-cyan-400">sale</span>{" "}
+                  <span className="text-white">=</span>{" "}
+                  <span className="text-purple-400">await</span>{" "}
+                  <span className="text-cyan-400">vibe</span>
+                  <span className="text-white">.</span>
+                  <span className="text-yellow-400">sellCredits</span>
+                  <span className="text-white">(&#123;</span>
+                  {"\n  "}
+                  <span className="text-cyan-400">userId</span>
+                  <span className="text-white">:</span>{" "}
+                  <span className="text-white">user</span>
+                  <span className="text-white">.</span>
+                  <span className="text-cyan-400">id</span>
+                  <span className="text-white">,</span>
+                  {"\n  "}
+                  <span className="text-cyan-400">credits</span>
+                  <span className="text-white">:</span>{" "}
+                  <span className="text-orange-400">500</span>
+                  <span className="text-white">,</span>
+                  {"\n  "}
+                  <span className="text-cyan-400">price</span>
+                  <span className="text-white">:</span>{" "}
+                  <span className="text-orange-400">29.99</span>
+                  {"\n"}
+                  <span className="text-white">&#125;)</span>
+                  {"\n\n"}
+                  <span className="text-gray-500">
+                    {`// ✅ Global taxes handled automatically`}
+                  </span>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          {/* What's included */}
+          <div className="space-y-3">
+            <h4 className="font-medium text-white text-sm">
+              We handle as your Merchant of Record:
+            </h4>
+            <div className="space-y-2">
+              {[
+                "Global tax calculation & collection",
+                "Legal liability & compliance",
+                "Credit processing & gamification",
+                "Currency conversion & payments",
+                "Real-time analytics & reporting",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center space-x-3 text-sm">
+                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full shrink-0" />
+                  <span className="text-gray-400">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Total implementation time */}
+          <div className="bg-green-500/5 border border-green-500/10 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-medium text-white text-sm">
+                  Total implementation
+                </div>
+                <div className="text-xs text-gray-400">
+                  Sell globally from day one
+                </div>
+              </div>
+              <div className="text-right">
+                <div className="text-lg font-medium text-green-400">
+                  5 minutes
+                </div>
+                <div className="text-xs text-gray-500">Revenue share only</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Bottom CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="text-center mt-16"
+      >
+        <p className="text-gray-400 mb-6">
+          Ready to skip months of development?
+        </p>
+        <div className="flex items-center justify-center space-x-4">
+          <Button className="bg-white text-black hover:bg-gray-100 font-medium h-11 px-8">
+            Request Beta Access
+          </Button>
+        </div>
+      </motion.div>
+    </section>
+  );
+}

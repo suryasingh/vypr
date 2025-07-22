@@ -20,7 +20,7 @@ export function Footer() {
               on building.
             </p>
             <div className="text-xs text-gray-500">
-              © 2024 VibePay. All rights reserved.
+              © 2025 VibePay. All rights reserved.
             </div>
           </div>
 

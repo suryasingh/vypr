@@ -29,7 +29,7 @@ export function CTASection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl lg:text-6xl font-medium text-white mb-6 tracking-tight">
-            Ready to add credits to your app?
+            Ready to monetize your AI app?
           </h2>
 
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
@@ -63,10 +63,10 @@ export function CTASection() {
             <div className="w-12 h-12 bg-green-500/10 border border-green-500/20 mx-auto flex items-center justify-center">
               <IconBolt className="w-6 h-6 text-green-400" />
             </div>
-            <h3 className="font-medium text-white">Global from day one</h3>
+            <h3 className="font-medium text-white">Perfect for AI features</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Sell credits to customers in 180+ countries with automatic tax 
-              compliance as your Merchant of Record.
+              Handle variable AI costs elegantly with credits. Serve users in 180+ 
+              countries with automatic tax compliance as your Merchant of Record.
             </p>
           </motion.div>
 

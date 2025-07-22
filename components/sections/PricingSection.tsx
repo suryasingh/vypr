@@ -80,24 +80,24 @@ export function PricingSection() {
         {[
           {
             scenario: "🇺🇸 US Sale",
-            amount: "$25.00",
-            fee: "$1.03",
-            youEarn: "$23.97",
-            description: "Sales tax handled automatically",
+            amount: "$19.99",
+            fee: "$0.88",
+            youEarn: "$19.11",
+            description: "500 credits for AI features • Sales tax handled",
           },
           {
             scenario: "🇩🇪 German Sale",
-            amount: "€23.50",
-            fee: "€0.98",
-            youEarn: "€22.52",
-            description: "VAT included & remitted for you",
+            amount: "€29.99",
+            fee: "€1.17",
+            youEarn: "€28.82",
+            description: "1000 credits for AI generation • VAT included",
           },
           {
             scenario: "🇬🇧 UK Sale", 
-            amount: "£20.99",
-            fee: "£0.91",
-            youEarn: "£20.08",
-            description: "Full UK VAT compliance included",
+            amount: "£9.99",
+            fee: "£0.59",
+            youEarn: "£9.40",
+            description: "250 credits for AI chat • Full VAT compliance",
           },
         ].map((example, index) => (
           <motion.div

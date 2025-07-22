@@ -21,10 +21,10 @@ export function HowItWorksSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
-            Sell credits globally in 3 steps
+            Monetize your AI app in 3 steps
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            From local app to global revenue with zero tax complexity
+            From local AI app to global revenue with credits, gamification, and zero tax complexity
           </p>
         </motion.div>
 
@@ -44,18 +44,19 @@ export function HowItWorksSection() {
                   1
                 </div>
                 <h3 className="text-xl font-medium text-white">
-                  Install the SDK
+                  Add credits to your AI app
                 </h3>
               </div>
 
               <h4 className="text-2xl lg:text-3xl font-medium text-white leading-tight">
-                Add credit systems to your app in{" "}
+                Handle variable AI costs with credits in{" "}
                 <span className="text-purple-400">5 minutes</span>
               </h4>
 
               <p className="text-gray-400 leading-relaxed">
-                Install our SDK and start adding credit-based features to your app. 
-                Works with any JavaScript framework. TypeScript support included.
+                Install our SDK and start charging credits for AI features like image 
+                generation, chat completions, and voice synthesis. Works with any 
+                JavaScript framework. TypeScript support included.
               </p>
 
               <div className="flex items-center space-x-2 text-sm text-purple-300">
@@ -109,19 +110,19 @@ export function HowItWorksSection() {
                   2
                 </div>
                 <h3 className="text-xl font-medium text-white">
-                  Set up credit packages
+                  Configure AI feature pricing
                 </h3>
               </div>
 
               <h4 className="text-2xl lg:text-3xl font-medium text-white leading-tight">
-                <span className="text-green-400">Configure once</span>, sell 
-                everywhere with automatic tax compliance
+                <span className="text-green-400">Set credit costs</span> for AI features 
+                and sell worldwide with automatic tax compliance
               </h4>
 
               <p className="text-gray-400 leading-relaxed">
-                Set your credit prices and packages. As your Merchant of Record, 
-                we automatically handle all global tax calculations, registrations, 
-                and compliance across 180+ countries.
+                Configure how many credits each AI feature costs (image generation: 25 credits, 
+                chat: 5 credits, etc.). As your Merchant of Record, we automatically handle 
+                all global tax calculations and compliance across 180+ countries.
               </p>
 
               <div className="flex items-center space-x-2 text-sm text-green-300">
@@ -134,16 +135,20 @@ export function HowItWorksSection() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <label className="text-xs text-gray-400">
-                    Credit Packages
+                    AI Feature Pricing
                   </label>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between p-2 bg-white/5 border border-white/10">
-                      <span className="text-sm text-white">Starter Pack</span>
-                      <span className="text-sm text-green-400">$9.99 • 100 credits</span>
+                      <span className="text-sm text-white">🎨 AI Image Generation</span>
+                      <span className="text-sm text-green-400">25 credits</span>
                     </div>
                     <div className="flex items-center justify-between p-2 bg-white/5 border border-white/10">
-                      <span className="text-sm text-white">Pro Pack</span>
-                      <span className="text-sm text-green-400">$29.99 • 500 credits</span>
+                      <span className="text-sm text-white">💬 GPT-4 Chat (1k tokens)</span>
+                      <span className="text-sm text-green-400">5 credits</span>
+                    </div>
+                    <div className="flex items-center justify-between p-2 bg-white/5 border border-white/10">
+                      <span className="text-sm text-white">🎵 Voice Synthesis</span>
+                      <span className="text-sm text-green-400">10 credits</span>
                     </div>
                   </div>
                 </div>
@@ -186,19 +191,19 @@ export function HowItWorksSection() {
                   3
                 </div>
                 <h3 className="text-xl font-medium text-white">
-                  Sell credits globally
+                  Launch and scale globally
                 </h3>
               </div>
 
               <h4 className="text-2xl lg:text-3xl font-medium text-white leading-tight">
-                <span className="text-cyan-400">Launch</span> and watch 
-                global revenue flow in
+                <span className="text-cyan-400">Watch users</span> engage with AI 
+                features worldwide
               </h4>
 
               <p className="text-gray-400 leading-relaxed">
-                Your customers can buy credits from anywhere in the world. 
-                We automatically calculate and collect the right taxes, 
-                handle currency conversion, and ensure full compliance.
+                Users spend credits on AI features from anywhere in the world. 
+                We automatically handle currency conversion, tax compliance, 
+                and ensure your AI app works globally from day one.
               </p>
 
               <div className="flex items-center space-x-2 text-sm text-cyan-300">
@@ -225,42 +230,42 @@ export function HowItWorksSection() {
 
               <div className="space-y-2">
                 <div className="text-xs text-gray-400 mb-2">
-                  Global Sales (Live)
+                  Live AI Usage Activity
                 </div>
                 {[
                   {
                     location: "🇩🇪 Germany",
-                    action: "Pro Pack purchased",
-                    amount: "€27.50",
-                    tax: "VAT included",
+                    action: "AI Image Generated",
+                    amount: "-25 credits",
+                    tax: "VAT compliant",
                     time: "2s ago",
                   },
                   {
                     location: "🇺🇸 California",
-                    action: "Starter Pack purchased", 
-                    amount: "$9.99",
-                    tax: "Sales tax added",
+                    action: "GPT-4 Chat Session", 
+                    amount: "-15 credits",
+                    tax: "Tax handled",
                     time: "8s ago",
                   },
                   {
                     location: "🇬🇧 United Kingdom",
-                    action: "Pro Pack purchased",
-                    amount: "£24.99",
-                    tax: "VAT included", 
+                    action: "Voice Synthesis",
+                    amount: "-10 credits",
+                    tax: "VAT compliant", 
                     time: "15s ago",
                   },
-                ].map((sale, i) => (
+                ].map((usage, i) => (
                   <div
                     key={i}
                     className="flex items-center justify-between text-xs bg-white/5 p-2"
                   >
                     <div className="space-y-1">
-                      <div className="text-gray-300">{sale.location} • {sale.action}</div>
-                      <div className="text-gray-500">{sale.tax}</div>
+                      <div className="text-gray-300">{usage.location} • {usage.action}</div>
+                      <div className="text-gray-500">{usage.tax}</div>
                     </div>
                     <div className="text-right space-y-1">
-                      <div className="text-green-400">{sale.amount}</div>
-                      <div className="text-gray-500">{sale.time}</div>
+                      <div className="text-orange-400">{usage.amount}</div>
+                      <div className="text-gray-500">{usage.time}</div>
                     </div>
                   </div>
                 ))}
@@ -279,7 +284,7 @@ export function HowItWorksSection() {
         >
           <div className="max-w-xl mx-auto space-y-6">
             <p className="text-gray-400">
-              Ready to sell credits globally without tax headaches?
+              Ready to monetize your AI app globally without complexity?
             </p>
             <Button className="bg-white text-black hover:bg-gray-100 font-medium h-12 px-8">
               Request Beta Access

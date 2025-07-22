@@ -28,10 +28,10 @@ export function SocialProofSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
-            Developers love selling globally without tax headaches
+            AI app developers love credits + gamification
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Join developers who chose credit systems with built-in global compliance
+            Join developers building engaging AI apps with credits, gamification, and global reach
           </p>
         </motion.div>
 
@@ -45,9 +45,9 @@ export function SocialProofSection() {
         >
           <motion.div variants={fadeInUp} className="text-center">
             <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
-              500+
+              50M+
             </div>
-            <div className="text-gray-400">Beta Developers</div>
+            <div className="text-gray-400">AI Requests Processed</div>
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center">
             <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
@@ -115,9 +115,9 @@ export function SocialProofSection() {
           >
             <blockquote className="text-lg text-gray-300 leading-relaxed">
               &ldquo;We went from having zero international sales to 60% of our revenue 
-              coming from Europe and Asia. VibePay handles all the tax complexity 
-              as our Merchant of Record - it&apos;s like having a global tax team 
-              without the overhead.&rdquo;
+              coming from Europe and Asia. Users love our AI image generator, and 
+              VibePay handles all the tax complexity as our Merchant of Record - 
+              it&apos;s like having a global tax team without the overhead.&rdquo;
             </blockquote>
             <div className="flex items-center space-x-4 mt-6">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-medium">
@@ -126,7 +126,7 @@ export function SocialProofSection() {
               <div>
                 <div className="font-medium text-white">Sarah Chen</div>
                 <div className="text-sm text-gray-400">
-                  Senior Engineer, AI Startup
+                  Senior Engineer, AI Creative Studio
                 </div>
                 <div className="text-xs text-gray-500">Y Combinator S23</div>
               </div>

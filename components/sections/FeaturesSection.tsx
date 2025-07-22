@@ -39,7 +39,7 @@ export function FeaturesSection() {
           Built for scale. Designed for speed.
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Production-ready infrastructure that top companies trust with millions in revenue
+          Complete infrastructure for AI apps. Handle variable costs with credits, boost engagement with gamification—all while serving users globally.
         </p>
       </motion.div>
 
@@ -210,37 +210,37 @@ export function FeaturesSection() {
             
             {/* Key Metrics */}
             <div className="space-y-3">
-              {/* Revenue Today */}
+              {/* AI Requests Today */}
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-400">Revenue today</span>
+                <span className="text-xs text-gray-400">AI requests today</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-cyan-400">$847.30</span>
-                  <span className="text-xs text-green-400">+12%</span>
+                  <span className="text-sm font-mono text-cyan-400">12,847</span>
+                  <span className="text-xs text-green-400">+23%</span>
                 </div>
               </div>
               
-              {/* Active Users */}
+              {/* Credits Earned */}
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-400">Active users</span>
+                <span className="text-xs text-gray-400">Credits earned</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-purple-400">147</span>
-                  <span className="text-xs text-green-400">+8</span>
+                  <span className="text-sm font-mono text-purple-400">8,470</span>
+                  <span className="text-xs text-green-400">+15%</span>
                 </div>
               </div>
               
-              {/* Conversion Rate */}
+              {/* Retention Rate */}
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-400">Conversion rate</span>
+                <span className="text-xs text-gray-400">Retention rate</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-orange-400">4.2%</span>
-                  <span className="text-xs text-green-400">+0.3%</span>
+                  <span className="text-sm font-mono text-orange-400">87.2%</span>
+                  <span className="text-xs text-green-400">+4.1%</span>
                 </div>
               </div>
               
               {/* Separator */}
               <div className="border-t border-white/5 pt-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">Last transaction</span>
+                  <span className="text-xs text-gray-500">Last AI generation</span>
                   <span className="text-xs text-gray-400 font-mono">2 min ago</span>
                 </div>
               </div>

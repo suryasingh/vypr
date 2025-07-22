@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { BetaAccessModal } from "@/components/BetaAccessModal";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -286,9 +287,11 @@ export function HowItWorksSection() {
             <p className="text-gray-400">
               Ready to monetize your AI app globally without complexity?
             </p>
-            <Button className="bg-white text-black hover:bg-gray-100 font-medium h-12 px-8">
-              Request Beta Access
-            </Button>
+            <BetaAccessModal>
+              <Button className="bg-white text-black hover:bg-gray-100 font-medium h-12 px-8">
+                Request Beta Access
+              </Button>
+            </BetaAccessModal>
           </div>
         </motion.div>
     </section>

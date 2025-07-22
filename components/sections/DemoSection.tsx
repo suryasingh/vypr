@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { BetaAccessModal } from "@/components/BetaAccessModal";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -274,9 +275,11 @@ export function DemoSection() {
           Ready to skip months of development?
         </p>
         <div className="flex items-center justify-center space-x-4">
-          <Button className="bg-white text-black hover:bg-gray-100 font-medium h-11 px-8">
-            Request Beta Access
-          </Button>
+          <BetaAccessModal>
+            <Button className="bg-white text-black hover:bg-gray-100 font-medium h-11 px-8">
+              Request Beta Access
+            </Button>
+          </BetaAccessModal>
         </div>
       </motion.div>
     </section>

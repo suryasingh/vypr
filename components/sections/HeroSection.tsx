@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { BetaAccessModal } from "@/components/BetaAccessModal";
+
 
 export function HeroSection() {
   return (
@@ -35,18 +37,20 @@ export function HeroSection() {
             <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
               Handle variable AI costs with credits, boost user engagement 
               with gamification, and sell globally—all with a single API. 
-              We're your Merchant of Record.
+              We&apos;re your Merchant of Record.
             </p>
           </div>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button className="bg-white text-black hover:bg-gray-100 font-medium h-12 px-8 text-base">
-              Request Beta Access
-            </Button>
+            <BetaAccessModal>
+              <Button className="cursor-pointer font-medium h-12 px-8 text-base">
+                Request Beta Access
+              </Button>
+            </BetaAccessModal>
             <Button
               variant="ghost"
-              className="text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
+              className="cursor-pointer text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
             >
               See Global Coverage
             </Button>

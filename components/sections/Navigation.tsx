@@ -28,13 +28,13 @@ export function Navigation() {
             <Button
               variant="ghost"
               size="sm"
-              className="hidden sm:flex text-gray-300 hover:text-white hover:bg-white/10 h-9 px-4 text-sm transition-all duration-200"
+              className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white hover:bg-white/10 h-9 px-4 text-sm transition-all duration-200"
             >
               Book a Demo
             </Button>
             <Button
               size="sm"
-              className="bg-white text-black hover:bg-gray-100 h-9 px-5 text-sm font-medium transition-all duration-200 hover:scale-105"
+              className="cursor-pointer h-9 px-5 text-sm font-medium transition-all duration-200 hover:scale-105"
             >
               Request Beta
             </Button>

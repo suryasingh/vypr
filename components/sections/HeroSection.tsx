@@ -37,7 +37,7 @@ export function HeroSection() {
             <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
               Handle variable AI costs with credits, accelerate user growth 
               with built-in retention features, and sell globally—all with a 
-              single API. We're your Merchant of Record.
+              single API. We&apos;re your Merchant of Record.
             </p>
           </div>
 

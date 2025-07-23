@@ -26,13 +26,19 @@ export function Navigation() {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white hover:bg-white/10 h-9 px-4 text-sm transition-all duration-200"
+            <a 
+              href="https://cal.com/vibepay" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Book a Demo
-            </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white hover:bg-white/10 h-9 px-4 text-sm transition-all duration-200"
+              >
+                Book a Demo
+              </Button>
+            </a>
             <BetaAccessModal>
               <Button
                 size="sm"

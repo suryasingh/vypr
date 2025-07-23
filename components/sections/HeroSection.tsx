@@ -6,7 +6,7 @@ import { BetaAccessModal } from "@/components/BetaAccessModal";
 
 export function HeroSection() {
   return (
-    <section className="pt-28 pb-32 relative px-14">
+    <section className="pt-28 pb-32 relative px-6 sm:px-14">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left side - Main content */}
         <motion.div
@@ -49,12 +49,18 @@ export function HeroSection() {
                 Request Beta Access
               </Button>
             </BetaAccessModal>
-            <Button
-              variant="ghost"
-              className="cursor-pointer w-[220px] text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
+            <a 
+              href="https://cal.com/vibepay" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Book a Demo
-            </Button>
+              <Button
+                variant="ghost"
+                className="cursor-pointer w-[220px] text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
+              >
+                Book a Demo
+              </Button>
+            </a>
           </div>
 
           {/* Social proof */}
@@ -214,7 +220,7 @@ export function HeroSection() {
 })
 
 // ✅ Payments processed
-// ✅ Gamification active
+// ✅ Growth active
 // ✅ Analytics tracked`}
             </pre>
           </motion.div>

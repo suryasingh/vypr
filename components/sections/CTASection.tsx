@@ -44,13 +44,19 @@ export function CTASection() {
                 Request Beta Access
               </Button>
             </BetaAccessModal>
-            <Button
-              variant="ghost"
-              className="text-gray-300 cursor-pointer w-[220px] hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20 group"
+            <a 
+              href="https://cal.com/vibepay" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Book a Demo
-              <IconArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
+              <Button
+                variant="ghost"
+                className="text-gray-300 cursor-pointer w-[220px] hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20 group"
+              >
+                Book a Demo
+                <IconArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </div>
         </motion.div>
 

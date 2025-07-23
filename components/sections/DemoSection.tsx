@@ -22,10 +22,10 @@ export function DemoSection() {
         className="text-center mb-20"
       >
         <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
-          Credits + gamification for AI apps. Without the complexity.
+          Credits + growth for AI apps. Without the complexity.
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Building credit systems and engagement features is hard. Adding global compliance makes it impossible.
+          Building credit systems and growth features is hard. Adding global compliance makes it impossible.
         </p>
       </motion.div>
 
@@ -60,7 +60,7 @@ export function DemoSection() {
               { task: "Payment system + credit logic", time: "8-12 weeks" },
               { task: "Global tax calculation", time: "10-16 weeks" },
               { task: "Legal compliance setup", time: "12+ weeks" },
-              { task: "Gamification features", time: "6-8 weeks" },
+              { task: "User growth & retention features", time: "6-8 weeks" },
               { task: "Multi-currency & reporting", time: "4-6 weeks" },
               { task: "Analytics & dashboards", time: "3-4 weeks" },
               { task: "Testing & QA across regions", time: "4-6 weeks" },
@@ -213,7 +213,7 @@ export function DemoSection() {
                   <span className="text-white">&#125;)</span>
                   {"\n\n"}
                   <span className="text-gray-500">
-                    {`// ✅ Credits, gamification & global taxes`}
+                    {`// ✅ Credits, growth & global taxes`}
                   </span>
                 </code>
               </pre>
@@ -228,7 +228,7 @@ export function DemoSection() {
             <div className="space-y-2">
               {[
                 "Credit systems for variable AI costs",
-                "Built-in gamification & engagement",
+                "Built-in growth & retention features",
                 "Global tax calculation & collection",
                 "Real-time analytics & reporting",
                 "Currency conversion & payments",

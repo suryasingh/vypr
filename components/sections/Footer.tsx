@@ -1,6 +1,7 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
+import { BetaAccessModal } from "../BetaAccessModal";
 
 export function Footer() {
   return (
@@ -39,14 +40,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  API Reference
-                </a>
+                <BetaAccessModal>
+                  <a className="hover:text-white transition-colors">
+                    API Reference
+                  </a>
+                </BetaAccessModal>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Tax Dashboard
-                </a>
+                <BetaAccessModal>
+                  <a className="hover:text-white transition-colors">
+                    Tax Dashboard
+                  </a>
+                </BetaAccessModal>
               </li>
             </ul>
           </div>

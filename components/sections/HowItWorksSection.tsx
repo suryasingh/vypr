@@ -25,7 +25,7 @@ export function HowItWorksSection() {
             Monetize your AI app in 3 steps
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            From local AI app to global revenue with credits, gamification, and zero tax complexity
+            From local AI app to global revenue with credits, growth features, and zero tax complexity
           </p>
         </motion.div>
 

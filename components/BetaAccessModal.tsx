@@ -20,6 +20,7 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
   const [open, setOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -27,23 +28,49 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
     if (!email) return;
 
     setIsSubmitting(true);
+    setError("");
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 2 seconds and close modal
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setEmail("");
-      setOpen(false);
-    }, 2000);
+    try {
+      const response = await fetch('https://api.tryinloop.com/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'accept': '*/*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit email');
+      }
+
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      
+      // Reset form after 3 seconds and close modal
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setEmail("");
+        setError("");
+        setOpen(false);
+      }, 3000);
+      
+    } catch (err) {
+      setIsSubmitting(false);
+      setError('Something went wrong. Please try again.');
+    }
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={(newOpen) => {
+      setOpen(newOpen);
+      if (!newOpen) {
+        // Clear form when modal closes
+        setError("");
+      }
+    }}>
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
@@ -82,10 +109,16 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
                 type="email"
                 placeholder="you@company.com"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (error) setError("");
+                }}
                 required
                 className="w-full h-12 mt-2"
               />
+              {error && (
+                <p className="text-sm text-red-400 mt-2">{error}</p>
+              )}
             </div>
             
             <div className="space-y-4">

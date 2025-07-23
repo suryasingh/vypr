@@ -39,7 +39,7 @@ export function FeaturesSection() {
           Built for scale. Designed for speed.
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Complete infrastructure for AI apps. Handle variable costs with credits, boost engagement with gamification—all while serving users globally.
+          Complete infrastructure for AI apps. Handle variable costs with credits, accelerate user growth with retention features—all while serving users globally.
         </p>
       </motion.div>
 
@@ -99,7 +99,7 @@ export function FeaturesSection() {
           </div>
         </motion.div>
 
-        {/* Gamification Engine */}
+        {/* Growth Engine */}
         <motion.div
           variants={fadeInUp}
           className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
@@ -107,18 +107,18 @@ export function FeaturesSection() {
           <div className="flex items-center space-x-3 mb-6">
             <IconTrophy className="w-5 h-5 text-green-400" />
             <h3 className="text-lg font-medium text-white">
-              Gamification Engine
+              Growth Engine
             </h3>
           </div>
 
           <h4 className="text-2xl lg:text-3xl font-medium text-white mb-4 leading-tight">
             Turn users into power users with
-            <span className="text-green-400"> behavioral psychology</span> that works.
+            <span className="text-green-400"> proven growth patterns</span> that work.
           </h4>
 
           <p className="text-gray-400 mb-8 leading-relaxed">
-            Proven gamification patterns used by top apps. Automated achievements, 
-            streak rewards, and referral systems that increase retention by 85% 
+            Proven retention strategies used by top apps. Automated rewards, 
+            streak bonuses, and referral systems that increase user lifetime value by 85% 
             without any additional development.
           </p>
 
@@ -162,7 +162,7 @@ export function FeaturesSection() {
 
           <div className="flex items-center text-sm text-green-300">
             <IconBolt className="w-4 h-4 mr-2" />
-            Proven 85% retention boost
+            Proven 85% revenue growth boost
           </div>
         </motion.div>
       </motion.div>

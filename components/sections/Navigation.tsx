@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { BetaAccessModal } from "../BetaAccessModal";
 
 export function Navigation() {
   return (
@@ -32,12 +33,14 @@ export function Navigation() {
             >
               Book a Demo
             </Button>
-            <Button
-              size="sm"
-              className="cursor-pointer h-9 px-5 text-sm font-medium transition-all duration-200 hover:scale-105"
-            >
-              Request Beta
-            </Button>
+            <BetaAccessModal>
+              <Button
+                size="sm"
+                className="cursor-pointer h-9 px-5 text-sm font-medium transition-all duration-200 hover:scale-105"
+              >
+                Request Beta
+              </Button>
+            </BetaAccessModal>
           </div>
         </div>
       </div>

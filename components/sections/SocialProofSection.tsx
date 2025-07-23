@@ -28,10 +28,10 @@ export function SocialProofSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
-            AI app developers love credits + gamification
+            AI app developers love credits + growth
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Join developers building engaging AI apps with credits, gamification, and global reach
+            Join developers building engaging AI apps with credits, growth features, and global reach
           </p>
         </motion.div>
 
@@ -138,10 +138,10 @@ export function SocialProofSection() {
             className="bg-white/[0.01] border border-white/5 p-8"
           >
             <blockquote className="text-lg text-gray-300 leading-relaxed">
-              &ldquo;The built-in gamification transformed our app. Users went from 
+              &ldquo;The built-in growth features transformed our app. Users went from 
               buying credits once to purchasing 3-4 times per month. The 
-              achievement system and streak rewards drive engagement we never 
-              had before - all without writing a single line of gamification code.&rdquo;
+              reward system and streak bonuses drive retention we never 
+              had before - all without writing a single line of growth code.&rdquo;
             </blockquote>
             <div className="flex items-center space-x-4 mt-6">
               <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center text-white font-medium">

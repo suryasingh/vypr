@@ -27,7 +27,7 @@ export function HeroSection() {
           {/* Main headline */}
           <div className="space-y-6">
             <h1 className="text-6xl lg:text-7xl font-medium text-white leading-[0.9] tracking-tight">
-              Credits + gamification
+              Credits + growth
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">for AI apps.</span>
               <br />
@@ -35,9 +35,9 @@ export function HeroSection() {
             </h1>
 
             <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
-              Handle variable AI costs with credits, boost user engagement 
-              with gamification, and sell globally—all with a single API. 
-              We&apos;re your Merchant of Record.
+              Handle variable AI costs with credits, accelerate user growth 
+              with built-in retention features, and sell globally—all with a 
+              single API. We're your Merchant of Record.
             </p>
           </div>
 
@@ -50,9 +50,9 @@ export function HeroSection() {
             </BetaAccessModal>
             <Button
               variant="ghost"
-              className="cursor-pointer text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
+              className="cursor-pointer w-[220px] text-gray-300 hover:text-white hover:bg-white/10 font-medium h-12 px-8 text-base border border-white/20"
             >
-              See Global Coverage
+              Book a Demo
             </Button>
           </div>
 

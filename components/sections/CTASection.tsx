@@ -77,9 +77,9 @@ export function CTASection() {
             <div className="w-12 h-12 bg-purple-500/10 border border-purple-500/20 mx-auto flex items-center justify-center">
               <IconRocket className="w-6 h-6 text-purple-400" />
             </div>
-            <h3 className="font-medium text-white">Built-in gamification</h3>
+            <h3 className="font-medium text-white">Built-in growth features</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Boost engagement with automated achievements, streaks, and rewards 
+              Boost revenue with automated rewards, streaks, and incentives 
               that increase repeat purchases.
             </p>
           </motion.div>

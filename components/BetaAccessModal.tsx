@@ -43,7 +43,18 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to submit email');
+        let errorMessage = 'Failed to submit email';
+        
+        try {
+          const errorData = await response.json();
+          if (errorData.message && errorData.message.toLowerCase().includes("exists")) {
+            errorMessage = 'You\'re already on our beta list! We\'ll be in touch soon.';
+          }
+        } catch (parseError) {
+          // If we can't parse the response, keep the default error message
+        }
+        
+        throw new Error(errorMessage);
       }
 
       setIsSubmitting(false);
@@ -59,7 +70,7 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
       
     } catch (err) {
       setIsSubmitting(false);
-      setError('Something went wrong. Please try again.');
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
     }
   };
 
@@ -82,7 +93,7 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
           <DialogDescription className="text-center text-gray-400 text-lg">
             Get early access to VibePay and start monetizing your AI app with{" "}
             <span className="text-purple-400">credits</span> +{" "}
-            <span className="text-green-400">gamification</span>.
+            <span className="text-green-400">growth</span>.
           </DialogDescription>
         </DialogHeader>
         

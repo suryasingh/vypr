@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { BetaAccessModal } from "../BetaAccessModal";
+import Link from "next/link";
 
 export function Navigation() {
   return (
@@ -26,6 +27,12 @@ export function Navigation() {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
+            <Link 
+              href="/blog"
+              className="hidden sm:flex text-gray-300 hover:text-white text-sm font-medium transition-colors duration-200"
+            >
+              Blog
+            </Link>
             <a 
               href="https://cal.com/vibepay" 
               target="_blank" 

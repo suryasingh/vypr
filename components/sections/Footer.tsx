@@ -2,10 +2,11 @@
 
 import { Separator } from "@/components/ui/separator";
 import { BetaAccessModal } from "../BetaAccessModal";
+import { cn } from "@/lib/utils";
 
-export function Footer() {
+export function Footer({ className }: { className?: string }) {
   return (
-    <footer className="py-20 pb-8 border-t border-border/40 px-14">
+    <footer className={cn("py-20 pb-8 border-t border-border/40 px-14", className)}>
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">

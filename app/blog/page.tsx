@@ -2,8 +2,6 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import { Navigation } from "@/components/sections/Navigation";
 import { Footer } from "@/components/sections/Footer";
-import { BetaAccessModal } from "@/components/BetaAccessModal";
-import { Button } from "@/components/ui/button";
 import {
   IconRocket,
   IconChartBar,
@@ -12,8 +10,6 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { CTASection } from "@/components/sections/CTASection";
-import { cn } from "@/lib/utils";
-import { DotPattern } from "@/components/magicui/dot-pattern";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
 function formatDate(dateString: string) {
@@ -112,7 +108,6 @@ export default async function BlogPage() {
         {/* Blog Posts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-20 pt-0">
           {posts.map((post) => {
-            const IconComponent = getPostIcon(post.slug);
             const iconColor = getPostColor(post.slug);
 
             return (

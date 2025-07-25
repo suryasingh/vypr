@@ -89,12 +89,12 @@ export function Footer({ className }: { className?: string }) {
             <h4 className="text-sm font-medium text-white">Legal</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/privacy" className="hover:text-white transition-colors">
                   Privacy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/terms" className="hover:text-white transition-colors">
                   Terms
                 </a>
               </li>

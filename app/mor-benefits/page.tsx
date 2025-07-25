@@ -1,20 +1,18 @@
 "use client";
 
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { CTASection } from "@/components/sections/CTASection";
 import { Footer } from "@/components/sections/Footer";
 import { Navigation } from "@/components/sections/Navigation";
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-import { motion } from "framer-motion";
-import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import {
-  IconShield,
   IconBolt,
-  IconGlobe,
   IconChartBar,
   IconCoin,
+  IconGlobe,
   IconLock,
+  IconShield,
 } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -44,17 +42,6 @@ export default function MoRBenefitsPage() {
           backgroundSize: "32px 32px",
         }}
       />
-
-      {/* Radial gradient overlay for depth */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at center, transparent 0%, transparent 60%, rgba(0, 0, 0, 0.5) 100%)",
-          }}
-        />
-      </div>
 
       <Navigation />
 
@@ -423,7 +410,7 @@ export default function MoRBenefitsPage() {
               MoR vs. DIY Compliance
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              See why developers choose VibePay's Merchant of Record service
+              See why developers choose VibePay&apos;s Merchant of Record service
               over building compliance infrastructure themselves.
             </p>
           </motion.div>
@@ -455,107 +442,107 @@ export default function MoRBenefitsPage() {
                     <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
                       Setup Time
                     </td>
-                                          <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          Same day
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          6-12 months
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Legal Liability
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          VibePay handles it
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          You're responsible
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Tax Filing
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          100% Automated
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          Manual work
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Compliance Updates
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          Auto-updated
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          Manual tracking
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Audit Support
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          Full protection
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          Your risk
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Global Coverage
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          180+ countries
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          Very limited
-                        </span>
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-white/[0.01] transition-colors">
-                      <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
-                        Average Cost
-                      </td>
-                      <td className="px-8 py-4 text-center border-r border-white/5">
-                        <span className="text-green-400 font-medium">
-                          3% transaction fee
-                        </span>
-                      </td>
-                      <td className="px-8 py-4 text-center">
-                        <span className="text-red-400 font-medium">
-                          $250K+ setup cost
-                        </span>
-                      </td>
-                    </tr>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        Same day
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        6-12 months
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Legal Liability
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        VibePay handles it
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        You&apos;re responsible
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Tax Filing
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        100% Automated
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        Manual work
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Compliance Updates
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        Auto-updated
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        Manual tracking
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Audit Support
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        Full protection
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        Your risk
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/5 hover:bg-white/[0.01] transition-colors bg-white/[0.005]">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Global Coverage
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        180+ countries
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        Very limited
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.01] transition-colors">
+                    <td className="px-8 py-4 text-gray-300 font-medium border-r border-white/5">
+                      Average Cost
+                    </td>
+                    <td className="px-8 py-4 text-center border-r border-white/5">
+                      <span className="text-green-400 font-medium">
+                        3% transaction fee
+                      </span>
+                    </td>
+                    <td className="px-8 py-4 text-center">
+                      <span className="text-red-400 font-medium">
+                        $250K+ setup cost
+                      </span>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>

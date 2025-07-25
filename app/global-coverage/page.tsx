@@ -1,23 +1,21 @@
 "use client";
 
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import { Globe } from "@/components/magicui/globe";
 import { CTASection } from "@/components/sections/CTASection";
 import { Footer } from "@/components/sections/Footer";
 import { Navigation } from "@/components/sections/Navigation";
-import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { motion } from "framer-motion";
-import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import {
-  IconWorld,
   IconBolt,
-  IconShield,
   IconChartBar,
-  IconCoin,
   IconCheck,
   IconGlobe,
   IconMapPin,
+  IconShield,
+  IconWorld,
 } from "@tabler/icons-react";
-import { Globe } from "@/components/magicui/globe";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -84,7 +82,7 @@ export default function GlobalCoveragePage() {
                   { location: [37.7595, -122.4367], size: 0.03 },
                   { location: [40.7128, -74.006], size: 0.1 },
                 ],
-                onRender: (state) => {},
+                onRender: () => {},
               }}
             />
           </div>
@@ -352,8 +350,8 @@ export default function GlobalCoveragePage() {
               </h5>
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Support for Japan's consumption tax, Australia's GST,
-                Singapore's GST, and other key Asian markets with localized
+                Support for Japan&apos;s consumption tax, Australia&apos;s GST,
+                Singapore&apos;s GST, and other key Asian markets with localized
                 compliance.
               </p>
 
@@ -515,7 +513,7 @@ export default function GlobalCoveragePage() {
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-6">
                   Continuous monitoring of regulatory changes across all
-                  markets. Automatic updates ensure you're always compliant.
+                  markets. Automatic updates ensure you&apos;re always compliant.
                 </p>
                 <div className="text-sm text-purple-400">
                   Proactive compliance updates

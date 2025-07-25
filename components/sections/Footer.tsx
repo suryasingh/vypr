@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 
 export function Footer({ className }: { className?: string }) {
   return (
-    <footer className={cn("py-20 pb-8 border-t border-border/40 px-14", className)}>
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+    <footer className={cn("py-20 pb-8 border-t border-border/40", className)}>
+        <div className="grid md:grid-cols-4 gap-8 mb-12 px-14">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
@@ -31,12 +31,12 @@ export function Footer({ className }: { className?: string }) {
             <h4 className="text-sm font-medium text-white">Product</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/global-coverage" className="hover:text-white transition-colors">
                   Global Coverage
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/mor-benefits" className="hover:text-white transition-colors">
                   MoR Benefits
                 </a>
               </li>
@@ -112,9 +112,9 @@ export function Footer({ className }: { className?: string }) {
           </div>
         </div>
 
-        <Separator className="bg-white/10" />
+        <Separator className="bg-border/40" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between mt-8 text-sm text-gray-500">
+        <div className="flex flex-col md:flex-row items-center justify-between mt-8 text-sm text-gray-500 px-14">
           <div>Built with ❤️ for global developers</div>
           <div className="flex items-center space-x-6">
             <span>180+ Countries</span>

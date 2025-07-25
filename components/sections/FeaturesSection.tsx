@@ -9,6 +9,7 @@ import {
   IconShield,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { FlickeringGrid } from "../magicui/flickering-grid";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -26,22 +27,36 @@ const stagger = {
 
 export function FeaturesSection() {
   return (
-    <section className="py-32 pb-0 relative border-t border-white/5" id="features">
+    <section className="pb-0 relative border-t border-white/5" id="features">
       {/* Section Header */}
-      <motion.div
-        variants={fadeInUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="text-center mb-20"
-      >
-        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
-          Built for scale. Designed for speed.
-        </h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Complete infrastructure for AI apps. Handle variable costs with credits, accelerate user growth with retention features—all while serving users globally.
-        </p>
-      </motion.div>
+      <div className="relative z-10 pt-28 pb-20">
+        <FlickeringGrid
+          className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+          squareSize={4}
+          gridGap={6}
+          color="#FFFFFF"
+          maxOpacity={0.04}
+          flickerChance={0.1}
+          height={1000}
+          width={1400}
+        />
+        <motion.div
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-center relative z-10"
+        >
+          <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+            Built for scale. Designed for speed.
+          </h2>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            Complete infrastructure for AI apps. Handle variable costs with
+            credits, accelerate user growth with retention features—all while
+            serving users globally.
+          </p>
+        </motion.div>
+      </div>
 
       {/* Main Features Grid */}
       <motion.div
@@ -52,10 +67,7 @@ export function FeaturesSection() {
         className="grid lg:grid-cols-2"
       >
         {/* Credit Infrastructure */}
-        <motion.div
-          variants={fadeInUp}
-          className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-        >
+        <div className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
           <div className="flex items-center space-x-3 mb-6">
             <IconCoin className="w-5 h-5 text-purple-400" />
             <h3 className="text-lg font-medium text-white">
@@ -64,14 +76,14 @@ export function FeaturesSection() {
           </div>
 
           <h4 className="text-2xl lg:text-3xl font-medium text-white mb-4 leading-tight">
-            <span className="text-purple-400">Process millions</span> in payments
-            with enterprise-grade infrastructure.
+            <span className="text-purple-400">Process millions</span> in
+            payments with enterprise-grade infrastructure.
           </h4>
 
           <p className="text-gray-400 mb-8 leading-relaxed">
-            Handle everything from microtransactions to large purchases. Automatic 
-            charging, real-time balance updates, and fraud protection that scales 
-            with your business.
+            Handle everything from microtransactions to large purchases.
+            Automatic charging, real-time balance updates, and fraud protection
+            that scales with your business.
           </p>
 
           {/* Visual Diagram */}
@@ -97,29 +109,25 @@ export function FeaturesSection() {
             <IconBolt className="w-4 h-4 mr-2" />
             Sub-second response times
           </div>
-        </motion.div>
+        </div>
 
         {/* Growth Engine */}
-        <motion.div
-          variants={fadeInUp}
-          className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-        >
+        <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
           <div className="flex items-center space-x-3 mb-6">
             <IconTrophy className="w-5 h-5 text-green-400" />
-            <h3 className="text-lg font-medium text-white">
-              Growth Engine
-            </h3>
+            <h3 className="text-lg font-medium text-white">Growth Engine</h3>
           </div>
 
           <h4 className="text-2xl lg:text-3xl font-medium text-white mb-4 leading-tight">
             Turn users into power users with
-            <span className="text-green-400"> proven growth patterns</span> that work.
+            <span className="text-green-400"> proven growth patterns</span> that
+            work.
           </h4>
 
           <p className="text-gray-400 mb-8 leading-relaxed">
-            Proven retention strategies used by top apps. Automated rewards, 
-            streak bonuses, and referral systems that increase user lifetime value by 85% 
-            without any additional development.
+            Proven retention strategies used by top apps. Automated rewards,
+            streak bonuses, and referral systems that increase user lifetime
+            value by 85% without any additional development.
           </p>
 
           {/* Achievement Flow */}
@@ -164,7 +172,7 @@ export function FeaturesSection() {
             <IconBolt className="w-4 h-4 mr-2" />
             Proven 85% revenue growth boost
           </div>
-        </motion.div>
+        </div>
       </motion.div>
 
       {/* Secondary Features */}
@@ -176,10 +184,7 @@ export function FeaturesSection() {
         className="grid md:grid-cols-3"
       >
         {/* Analytics Dashboard */}
-        <motion.div
-          variants={fadeInUp}
-          className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6  transition-all duration-300"
-        >
+        <div className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6  transition-all duration-300">
           <div className="flex items-center space-x-3 mb-6">
             <IconChartBar className="w-5 h-5 text-cyan-400" />
             <h4 className="text-lg font-medium text-white">
@@ -188,13 +193,13 @@ export function FeaturesSection() {
           </div>
 
           <h5 className="text-xl font-medium text-white mb-3">
-            <span className="text-cyan-400">Real-time intelligence</span> that drives 
-            revenue decisions, not just pretty charts.
+            <span className="text-cyan-400">Real-time intelligence</span> that
+            drives revenue decisions, not just pretty charts.
           </h5>
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Monitor user behavior, track conversion funnels, and optimize pricing 
-            with actionable insights that actually move the needle.
+            Monitor user behavior, track conversion funnels, and optimize
+            pricing with actionable insights that actually move the needle.
           </p>
 
           {/* Live Metrics Dashboard */}
@@ -207,54 +212,63 @@ export function FeaturesSection() {
                 <span className="text-xs text-green-400">Real-time</span>
               </div>
             </div>
-            
+
             {/* Key Metrics */}
             <div className="space-y-3">
               {/* AI Requests Today */}
               <div className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">AI requests today</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-cyan-400">12,847</span>
+                  <span className="text-sm font-mono text-cyan-400">
+                    12,847
+                  </span>
                   <span className="text-xs text-green-400">+23%</span>
                 </div>
               </div>
-              
+
               {/* Credits Earned */}
               <div className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">Credits earned</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-purple-400">8,470</span>
+                  <span className="text-sm font-mono text-purple-400">
+                    8,470
+                  </span>
                   <span className="text-xs text-green-400">+15%</span>
                 </div>
               </div>
-              
+
               {/* Retention Rate */}
               <div className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">Retention rate</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-mono text-orange-400">87.2%</span>
+                  <span className="text-sm font-mono text-orange-400">
+                    87.2%
+                  </span>
                   <span className="text-xs text-green-400">+4.1%</span>
                 </div>
               </div>
-              
+
               {/* Separator */}
               <div className="border-t border-white/5 pt-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">Last AI generation</span>
-                  <span className="text-xs text-gray-400 font-mono">2 min ago</span>
+                  <span className="text-xs text-gray-500">
+                    Last AI generation
+                  </span>
+                  <span className="text-xs text-gray-400 font-mono">
+                    2 min ago
+                  </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="text-xs text-cyan-400">Live data • Updates every 30 seconds</div>
-        </motion.div>
+          <div className="text-xs text-cyan-400">
+            Live data • Updates every 30 seconds
+          </div>
+        </div>
 
         {/* Developer Experience */}
-        <motion.div
-          variants={fadeInUp}
-          className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300"
-        >
+        <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300">
           <div className="flex items-center space-x-3 mb-6">
             <IconCode className="w-5 h-5 text-orange-400" />
             <h4 className="text-lg font-medium text-white">
@@ -263,14 +277,14 @@ export function FeaturesSection() {
           </div>
 
           <h5 className="text-xl font-medium text-white mb-3">
-            <span className="text-orange-400">Ship in minutes</span>, not months.
-            APIs that don&apos;t fight you.
+            <span className="text-orange-400">Ship in minutes</span>, not
+            months. APIs that don&apos;t fight you.
           </h5>
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Documentation that makes sense. SDKs that work out of the box. 
-            Error handling that actually helps you debug. Built by developers 
-            who hate bad APIs.
+            Documentation that makes sense. SDKs that work out of the box. Error
+            handling that actually helps you debug. Built by developers who hate
+            bad APIs.
           </p>
 
           {/* API Example */}
@@ -295,34 +309,35 @@ export function FeaturesSection() {
                 <span className="text-blue-400">2425</span>,
               </div>
               <div className="text-gray-400 pl-2">
-                <span className="text-orange-300">&quot;transaction_id&quot;</span>:{" "}
-                <span className="text-green-400">&quot;tx_abc123&quot;</span>
+                <span className="text-orange-300">
+                  &quot;transaction_id&quot;
+                </span>
+                : <span className="text-green-400">&quot;tx_abc123&quot;</span>
               </div>
               <div className="text-gray-400">&#125;</div>
             </pre>
           </div>
 
-          <div className="text-xs text-orange-400">Production ready in 5 minutes</div>
-        </motion.div>
+          <div className="text-xs text-orange-400">
+            Production ready in 5 minutes
+          </div>
+        </div>
 
         {/* Enterprise Security */}
-        <motion.div
-          variants={fadeInUp}
-          className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300"
-        >
+        <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300">
           <div className="flex items-center space-x-3 mb-6">
             <IconShield className="w-5 h-5 text-red-400" />
             <h4 className="text-lg font-medium text-white">Enterprise Ready</h4>
           </div>
 
           <h5 className="text-xl font-medium text-white mb-3">
-            <span className="text-red-400">Enterprise-grade</span> security 
+            <span className="text-red-400">Enterprise-grade</span> security
             without the enterprise hassle.
           </h5>
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Bank-level security, SOC 2 compliance, and dedicated support. 
-            All the enterprise features you need, with the simplicity you want.
+            Bank-level security, SOC 2 compliance, and dedicated support. All
+            the enterprise features you need, with the simplicity you want.
           </p>
 
           {/* Security Status */}
@@ -346,7 +361,7 @@ export function FeaturesSection() {
           </div>
 
           <div className="text-xs text-red-400">99.9% uptime SLA</div>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );

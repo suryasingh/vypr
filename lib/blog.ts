@@ -1,8 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypePrettyCode from 'rehype-pretty-code';
+import rehypeStringify from 'rehype-stringify';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -71,10 +74,17 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
-      .use(html, { sanitize: false })
+    // Use unified with remark and rehype to convert markdown into HTML with syntax highlighting
+    const processedContent = await unified()
+      .use(remarkParse)
+      .use(remarkRehype)
+      .use(rehypePrettyCode, {
+        theme: 'github-dark',
+        keepBackground: false,
+      })
+      .use(rehypeStringify)
       .process(matterResult.content);
+    
     const contentHtml = processedContent.toString();
 
     // Combine the data with the slug and rendered content

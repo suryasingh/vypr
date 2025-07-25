@@ -1,11 +1,9 @@
+import { CTASection } from "@/components/sections/CTASection";
+import { Footer } from "@/components/sections/Footer";
+import { Navigation } from "@/components/sections/Navigation";
+import { getAllPostSlugs, getPostBySlug } from "@/lib/blog";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPostBySlug, getAllPostSlugs } from "@/lib/blog";
-import { Navigation } from "@/components/sections/Navigation";
-import { Footer } from "@/components/sections/Footer";
-import { BetaAccessModal } from "@/components/BetaAccessModal";
-import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString("en-US", {
@@ -16,9 +14,9 @@ function formatDate(dateString: string) {
 }
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -29,7 +27,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return {
@@ -44,7 +43,8 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </div>
-        <CTASection className="bg-card/50 border mt-20 rounded-4xl mx-10" />
+        <CTASection className="bg-card/30 border mt-20 rounded-4xl mx-20" />
         <Footer className="border-t-0" />
       </main>
     </div>

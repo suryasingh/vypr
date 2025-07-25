@@ -77,7 +77,7 @@ export function Footer({ className }: { className?: string }) {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="mailto:team@vibepay.sh" className="hover:text-white transition-colors">
                   Contact
                 </a>
               </li>

@@ -10,7 +10,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
             {/* Simple Logo Icon */}
             <div className="w-6 h-6 bg-white border border-white/20 flex items-center justify-center">
               <div className="w-2 h-2 bg-black"></div>
@@ -23,7 +23,7 @@ export function Navigation() {
                 BETA
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">

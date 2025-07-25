@@ -36,8 +36,8 @@ export function CTASection({ className }: { className?: string }) {
     >
       <Ripple
         className="absolute inset-0 z-0"
-        mainCircleOpacity={0.2}
-        mainCircleSize={360}
+        mainCircleOpacity={0.15}
+        mainCircleSize={420}
         numCircles={10}
       />
       <motion.div

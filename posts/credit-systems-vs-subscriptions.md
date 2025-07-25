@@ -1,8 +1,8 @@
 ---
 title: "Credit Systems vs Subscriptions: Which is Right for Your AI App?"
-date: "2024-12-10"
+date: "2025-07-23"
 excerpt: "A detailed comparison of credit-based monetization vs traditional subscriptions for AI applications, with real-world examples and decision frameworks."
-author: "Alex Rodriguez"
+author: "VibePay Team"
 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80"
 ---
 

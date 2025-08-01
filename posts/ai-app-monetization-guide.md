@@ -1,5 +1,5 @@
 ---
-title: "The Complete Guide to AI App Monetization in 2024"
+title: "The Complete Guide to AI App Monetization in 2025"
 date: "2025-07-24"
 excerpt: "From freemium to credits: discover the monetization strategies that actually work for AI applications, with real examples and implementation tips."
 author: "VibePay Team"

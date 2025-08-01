@@ -47,13 +47,13 @@ export function Footer({ className }: { className?: string }) {
                   </a>
                 </BetaAccessModal>
               </li>
-              <li>
+              {/* <li>
                 <BetaAccessModal>
                   <a className="hover:text-white transition-colors">
                     Tax Dashboard
                   </a>
                 </BetaAccessModal>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -61,21 +61,21 @@ export function Footer({ className }: { className?: string }) {
           <div className="space-y-4">
             <h4 className="text-sm font-medium text-white">Company</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   About
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Blog
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Careers
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="mailto:team@vibepay.sh" className="hover:text-white transition-colors">
                   Contact
@@ -98,7 +98,7 @@ export function Footer({ className }: { className?: string }) {
                   Terms
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Security
                 </a>
@@ -107,7 +107,7 @@ export function Footer({ className }: { className?: string }) {
                 <a href="#" className="hover:text-white transition-colors">
                   Compliance
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -3,11 +3,22 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { BetaAccessModal } from "@/components/BetaAccessModal";
+import { FlickeringGrid } from "../magicui/flickering-grid";
 
 export function HeroSection() {
   return (
     <section className="pt-28 pb-32 relative px-6 sm:px-14">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <FlickeringGrid
+        className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+        squareSize={4}
+        gridGap={6}
+        color="#FFFFFF"
+        maxOpacity={0.04}
+        flickerChance={0.1}
+        height={1000}
+        width={1400}
+      />
+      <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
         {/* Left side - Main content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,9 +60,9 @@ export function HeroSection() {
                 Request Beta Access
               </Button>
             </BetaAccessModal>
-            <a 
-              href="https://cal.com/vibepay" 
-              target="_blank" 
+            <a
+              href="https://cal.com/vibepay"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Button

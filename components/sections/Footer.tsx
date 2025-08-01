@@ -3,6 +3,7 @@
 import { Separator } from "@/components/ui/separator";
 import { BetaAccessModal } from "../BetaAccessModal";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export function Footer({ className }: { className?: string }) {
   return (
@@ -31,14 +32,14 @@ export function Footer({ className }: { className?: string }) {
             <h4 className="text-sm font-medium text-white">Product</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/global-coverage" className="hover:text-white transition-colors">
+                <Link href="/global-coverage" className="hover:text-white transition-colors">
                   Global Coverage
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/mor-benefits" className="hover:text-white transition-colors">
+                <Link href="/mor-benefits" className="hover:text-white transition-colors">
                   MoR Benefits
-                </a>
+                </Link>
               </li>
               <li>
                 <BetaAccessModal>
@@ -67,9 +68,9 @@ export function Footer({ className }: { className?: string }) {
                 </a>
               </li> */}
               <li>
-                <a href="/blog" className="hover:text-white transition-colors">
+                <Link href="/blog" className="hover:text-white transition-colors">
                   Blog
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
@@ -89,14 +90,14 @@ export function Footer({ className }: { className?: string }) {
             <h4 className="text-sm font-medium text-white">Legal</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/privacy" className="hover:text-white transition-colors">
+                <Link href="/privacy" className="hover:text-white transition-colors">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/terms" className="hover:text-white transition-colors">
+                <Link href="/terms" className="hover:text-white transition-colors">
                   Terms
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <a href="#" className="hover:text-white transition-colors">

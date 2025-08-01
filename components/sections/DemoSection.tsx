@@ -1,44 +1,26 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { BetaAccessModal } from "@/components/BetaAccessModal";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
+import { Button } from "@/components/ui/button";
 
 export function DemoSection() {
   return (
     <section className="py-28 relative border-t border-border/40 px-14">
       {/* Section Header */}
-      <motion.div
-        variants={fadeInUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="text-center mb-20"
-      >
+      <div className="text-center mb-20">
         <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
           Credits + growth for AI apps. Without the complexity.
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Building credit systems and growth features is hard. Adding global compliance makes it impossible.
+          Building credit systems and growth features is hard. Adding global
+          compliance makes it impossible.
         </p>
-      </motion.div>
+      </div>
 
       {/* Comparison Grid */}
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Left side - Traditional approach */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="space-y-6"
-        >
+        <div className="space-y-6">
           <div className="space-y-3">
             <div className="w-12 h-12 bg-red-500/10 border border-red-500/20 flex items-center justify-center">
               <span className="text-red-400 text-xl">⚠️</span>
@@ -118,23 +100,21 @@ export function DemoSection() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Right side - With VibePay */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="space-y-6"
-        >
+        <div className="space-y-6">
           <div className="space-y-3">
             <div className="w-12 h-12 bg-green-500/10 border border-green-500/20 flex items-center justify-center">
               <span className="text-green-400 text-xl">⚡</span>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-white">With VibePay (MoR)</h3>
-              <p className="text-sm text-gray-500">Build your app. Serve users globally.</p>
+              <h3 className="text-lg font-medium text-white">
+                With VibePay (MoR)
+              </h3>
+              <p className="text-sm text-gray-500">
+                Build your app. Serve users globally.
+              </p>
             </div>
           </div>
 
@@ -180,7 +160,9 @@ export function DemoSection() {
                   {"\n  "}
                   <span className="text-cyan-400">description</span>
                   <span className="text-white">:</span>{" "}
-                  <span className="text-green-400">&apos;AI image generation&apos;</span>
+                  <span className="text-green-400">
+                    &apos;AI image generation&apos;
+                  </span>
                   {"\n"}
                   <span className="text-white">&#125;)</span>
                   {"\n\n"}
@@ -203,7 +185,9 @@ export function DemoSection() {
                   {"\n  "}
                   <span className="text-cyan-400">type</span>
                   <span className="text-white">:</span>{" "}
-                  <span className="text-green-400">&apos;daily_streak&apos;</span>
+                  <span className="text-green-400">
+                    &apos;daily_streak&apos;
+                  </span>
                   <span className="text-white">,</span>
                   {"\n  "}
                   <span className="text-cyan-400">amount</span>
@@ -260,17 +244,11 @@ export function DemoSection() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Bottom CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-center mt-16"
-      >
+      <div className="text-center mt-16">
         <p className="text-gray-400 mb-6">
           Ready to skip months of development?
         </p>
@@ -281,7 +259,7 @@ export function DemoSection() {
             </Button>
           </BetaAccessModal>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

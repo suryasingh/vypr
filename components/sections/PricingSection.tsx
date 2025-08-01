@@ -1,22 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { BetaAccessModal } from "@/components/BetaAccessModal";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
+import { Button } from "@/components/ui/button";
 
 export function PricingSection() {
   return (
@@ -25,30 +10,18 @@ export function PricingSection() {
       id="pricing"
     >
       {/* Section Header */}
-      <motion.div
-        variants={fadeInUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="text-center mb-20"
-      >
+      <div className="text-center mb-20">
         <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
           Global pricing. Zero tax complexity.
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Pay only when you earn. As your Merchant of Record, we handle all 
+          Pay only when you earn. As your Merchant of Record, we handle all
           global taxes, compliance, and regulations automatically.
         </p>
-      </motion.div>
+      </div>
 
       {/* Main Pricing Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="max-w-2xl mx-auto mb-16"
-      >
+      <div className="max-w-2xl mx-auto mb-16">
         <div className="bg-white/[0.01] border border-white/5 p-8 text-center">
           <div className="mb-8">
             <div className="text-5xl font-medium text-white mb-2">
@@ -59,9 +32,9 @@ export function PricingSection() {
           </div>
 
           <p className="text-gray-300 mb-8 leading-relaxed">
-            Only pay when your customers buy credits - from anywhere in the world. 
-            No setup fees, no VAT headaches, no compliance risk. We handle global 
-            tax collection as your Merchant of Record.
+            Only pay when your customers buy credits - from anywhere in the
+            world. No setup fees, no VAT headaches, no compliance risk. We
+            handle global tax collection as your Merchant of Record.
           </p>
 
           <BetaAccessModal>
@@ -70,16 +43,10 @@ export function PricingSection() {
             </Button>
           </BetaAccessModal>
         </div>
-      </motion.div>
+      </div>
 
       {/* Pricing Examples */}
-      <motion.div
-        variants={stagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-6 mb-16"
-      >
+      <div className="grid md:grid-cols-3 gap-6 mb-16">
         {[
           {
             scenario: "🇺🇸 US Sale",
@@ -96,16 +63,15 @@ export function PricingSection() {
             description: "1000 credits for AI generation • VAT included",
           },
           {
-            scenario: "🇬🇧 UK Sale", 
+            scenario: "🇬🇧 UK Sale",
             amount: "£9.99",
             fee: "£0.59",
             youEarn: "£9.40",
             description: "250 credits for AI chat • Full VAT compliance",
           },
         ].map((example, index) => (
-          <motion.div
+          <div
             key={index}
-            variants={fadeInUp}
             className="bg-white/[0.01] border border-white/5 p-6"
           >
             <div className="space-y-4">
@@ -137,9 +103,9 @@ export function PricingSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

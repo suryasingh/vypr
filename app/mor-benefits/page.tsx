@@ -12,21 +12,6 @@ import {
   IconLock,
   IconShield,
 } from "@tabler/icons-react";
-import { motion } from "framer-motion";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export default function MoRBenefitsPage() {
   return (
@@ -60,12 +45,7 @@ export default function MoRBenefitsPage() {
             width={1400}
           />
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative z-10 text-center space-y-8"
-          >
+          <div className="relative z-10 text-center space-y-8">
             {/* Status indicator */}
             <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10">
               <div className="w-2 h-2 bg-green-400 mr-3" />
@@ -95,23 +75,14 @@ export default function MoRBenefitsPage() {
             <div className="text-sm text-gray-500">
               Protecting developers in 180+ countries with zero compliance risk
             </div>
-          </motion.div>
+          </div>
         </section>
 
         {/* Main Benefits Grid */}
         <section className="pb-0 relative border-t border-white/5">
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-2"
-          >
+          <div className="grid lg:grid-cols-2">
             {/* Tax Compliance */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-            >
+            <div className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
               <div className="flex items-center space-x-3 mb-6">
                 <IconShield className="w-5 h-5 text-green-400" />
                 <h3 className="text-lg font-medium text-white">
@@ -165,13 +136,10 @@ export default function MoRBenefitsPage() {
                 <IconBolt className="w-4 h-4 mr-2" />
                 Zero penalty risk, 180+ countries
               </div>
-            </motion.div>
+            </div>
 
             {/* Regulatory Shield */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
               <div className="flex items-center space-x-3 mb-6">
                 <IconLock className="w-5 h-5 text-blue-400" />
                 <h3 className="text-lg font-medium text-white">
@@ -232,22 +200,13 @@ export default function MoRBenefitsPage() {
                 <IconShield className="w-4 h-4 mr-2" />
                 Full regulatory and financial liability transfer
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Secondary Benefits */}
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-3"
-          >
+          <div className="grid md:grid-cols-3">
             {/* Instant Global Reach */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6 transition-all duration-300"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6 transition-all duration-300">
               <div className="flex items-center space-x-3 mb-6">
                 <IconGlobe className="w-5 h-5 text-purple-400" />
                 <h4 className="text-lg font-medium text-white">
@@ -293,13 +252,10 @@ export default function MoRBenefitsPage() {
               <div className="text-xs text-purple-400">
                 Same-day global launch capability
               </div>
-            </motion.div>
+            </div>
 
             {/* Automated Reporting */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300">
               <div className="flex items-center space-x-3 mb-6">
                 <IconChartBar className="w-5 h-5 text-orange-400" />
                 <h4 className="text-lg font-medium text-white">
@@ -346,13 +302,10 @@ export default function MoRBenefitsPage() {
               <div className="text-xs text-orange-400">
                 100% automation, zero manual intervention
               </div>
-            </motion.div>
+            </div>
 
             {/* Revenue Optimization */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300">
               <div className="flex items-center space-x-3 mb-6">
                 <IconCoin className="w-5 h-5 text-red-400" />
                 <h4 className="text-lg font-medium text-white">
@@ -393,35 +346,23 @@ export default function MoRBenefitsPage() {
               <div className="text-xs text-red-400">
                 Strategic optimization included
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Comparison Table Section */}
         <section className="pb-0 relative border-t border-white/5">
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="text-center pt-20 pb-16"
-          >
+          <div className="text-center pt-20 pb-16">
             <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
               MoR vs. DIY Compliance
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              See why developers choose VibePay&apos;s Merchant of Record service
-              over building compliance infrastructure themselves.
+              See why developers choose VibePay&apos;s Merchant of Record
+              service over building compliance infrastructure themselves.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="w-full"
-          >
+          <div className="w-full">
             <div className="overflow-hidden border-t border-white/5">
               <table className="w-full">
                 <thead className="bg-white/[0.02] border-b border-white/5">
@@ -546,7 +487,7 @@ export default function MoRBenefitsPage() {
                 </tbody>
               </table>
             </div>
-          </motion.div>
+          </div>
         </section>
 
         <CTASection />

@@ -15,21 +15,6 @@ import {
   IconShield,
   IconWorld,
 } from "@tabler/icons-react";
-import { motion } from "framer-motion";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export default function GlobalCoveragePage() {
   return (
@@ -87,12 +72,7 @@ export default function GlobalCoveragePage() {
             />
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative z-10 text-center space-y-8"
-          >
+          <div className="relative z-10 text-center space-y-8">
             {/* Status indicator */}
             <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10">
               <div className="w-2 h-2 bg-cyan-400 mr-3" />
@@ -117,19 +97,13 @@ export default function GlobalCoveragePage() {
                 handle the complexity, you focus on growth.
               </p>
             </div>
-          </motion.div>
+          </div>
         </section>
 
         {/* Coverage Stats */}
         <section className="pb-0 relative border-t border-white/5">
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-4 gap-8 py-20 px-6 sm:px-14"
-          >
-            <motion.div variants={fadeInUp} className="text-center">
+          <div className="grid md:grid-cols-4 gap-8 py-20 px-6 sm:px-14">
+            <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-cyan-400 mb-2">
                 180+
               </div>
@@ -139,9 +113,9 @@ export default function GlobalCoveragePage() {
               <div className="text-sm text-gray-400">
                 Full tax compliance coverage
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeInUp} className="text-center">
+            <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-green-400 mb-2">
                 200+
               </div>
@@ -151,9 +125,9 @@ export default function GlobalCoveragePage() {
               <div className="text-sm text-gray-400">
                 Automated filing and reporting
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeInUp} className="text-center">
+            <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-purple-400 mb-2">
                 50+
               </div>
@@ -163,9 +137,9 @@ export default function GlobalCoveragePage() {
               <div className="text-sm text-gray-400">
                 Local payment processing
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeInUp} className="text-center">
+            <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-orange-400 mb-2">
                 99.9%
               </div>
@@ -175,19 +149,13 @@ export default function GlobalCoveragePage() {
               <div className="text-sm text-gray-400">
                 Enterprise-grade reliability
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Regional Coverage */}
         <section className="pb-0 relative border-t border-white/5">
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="text-center pt-20 pb-16 px-6 sm:px-14"
-          >
+          <div className="text-center pt-20 pb-16 px-6 sm:px-14">
             <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
               Complete Regional Coverage
             </h2>
@@ -195,20 +163,11 @@ export default function GlobalCoveragePage() {
               From Silicon Valley to Singapore, we handle compliance in every
               major market where your customers want to buy.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-2"
-          >
+          <div className="grid lg:grid-cols-2">
             {/* North America */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-            >
+            <div className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
               <div className="flex items-center space-x-3 mb-6">
                 <IconMapPin className="w-5 h-5 text-blue-400" />
                 <h3 className="text-lg font-medium text-white">
@@ -262,13 +221,10 @@ export default function GlobalCoveragePage() {
                 <IconCheck className="w-4 h-4 mr-2" />
                 50 US states + 13 Canadian provinces
               </div>
-            </motion.div>
+            </div>
 
             {/* Europe */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
               <div className="flex items-center space-x-3 mb-6">
                 <IconGlobe className="w-5 h-5 text-purple-400" />
                 <h3 className="text-lg font-medium text-white">Europe</h3>
@@ -323,22 +279,13 @@ export default function GlobalCoveragePage() {
                 <IconShield className="w-4 h-4 mr-2" />
                 GDPR compliant + OSS VAT handling
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Asia Pacific & Rest of World */}
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2"
-          >
+          <div className="grid md:grid-cols-2">
             {/* Asia Pacific */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6 transition-all duration-300"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6 transition-all duration-300">
               <div className="flex items-center space-x-3 mb-6">
                 <IconWorld className="w-5 h-5 text-green-400" />
                 <h4 className="text-lg font-medium text-white">Asia Pacific</h4>
@@ -382,13 +329,10 @@ export default function GlobalCoveragePage() {
               <div className="text-xs text-green-400">
                 Local payment methods supported
               </div>
-            </motion.div>
+            </div>
 
             {/* Rest of World */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300"
-            >
+            <div className="bg-white/[0.01] border border-r-0 border-b-0 border-white/5 p-6 transition-all duration-300">
               <div className="flex items-center space-x-3 mb-6">
                 <IconGlobe className="w-5 h-5 text-orange-400" />
                 <h4 className="text-lg font-medium text-white">
@@ -433,19 +377,13 @@ export default function GlobalCoveragePage() {
               <div className="text-xs text-orange-400">
                 40+ additional countries supported
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Tax Complexity Made Simple */}
         <section className="py-20 relative border-t border-white/5 px-6 sm:px-14">
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
               Tax Complexity Made Simple
             </h2>
@@ -453,17 +391,11 @@ export default function GlobalCoveragePage() {
               Every country has different rules. We handle them all
               automatically, so you can focus on building instead of compliance.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={stagger}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Real-time Calculation */}
-            <motion.div variants={fadeInUp}>
+            <div>
               <Card className="p-8 bg-card/50 border-border/40 h-full">
                 <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6">
                   <IconBolt className="w-6 h-6 text-cyan-400" />
@@ -480,10 +412,10 @@ export default function GlobalCoveragePage() {
                   Sub-second response times globally
                 </div>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Automated Filing */}
-            <motion.div variants={fadeInUp}>
+            <div>
               <Card className="p-8 bg-card/50 border-border/40 h-full">
                 <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
                   <IconChartBar className="w-6 h-6 text-green-400" />
@@ -500,10 +432,10 @@ export default function GlobalCoveragePage() {
                   Never miss a deadline again
                 </div>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Compliance Monitoring */}
-            <motion.div variants={fadeInUp}>
+            <div>
               <Card className="p-8 bg-card/50 border-border/40 h-full">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                   <IconShield className="w-6 h-6 text-purple-400" />
@@ -513,14 +445,15 @@ export default function GlobalCoveragePage() {
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-6">
                   Continuous monitoring of regulatory changes across all
-                  markets. Automatic updates ensure you&apos;re always compliant.
+                  markets. Automatic updates ensure you&apos;re always
+                  compliant.
                 </p>
                 <div className="text-sm text-purple-400">
                   Proactive compliance updates
                 </div>
               </Card>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         <CTASection />

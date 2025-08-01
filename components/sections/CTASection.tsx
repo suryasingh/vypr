@@ -1,30 +1,15 @@
 "use client";
 
+import { BetaAccessModal } from "@/components/BetaAccessModal";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   IconArrowRight,
   IconBolt,
   IconRocket,
   IconUsers,
 } from "@tabler/icons-react";
-import { motion } from "framer-motion";
-import { BetaAccessModal } from "@/components/BetaAccessModal";
-import { cn } from "@/lib/utils";
 import { Ripple } from "../magicui/ripple";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export function CTASection({ className }: { className?: string }) {
   return (
@@ -40,13 +25,7 @@ export function CTASection({ className }: { className?: string }) {
         mainCircleSize={420}
         numCircles={10}
       />
-      <motion.div
-        variants={fadeInUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="text-center mb-16 z-20 relative"
-      >
+      <div className="text-center mb-16 z-20 relative">
         <h2 className="text-5xl lg:text-6xl font-medium text-white mb-6 tracking-tight">
           Ready to monetize your AI app?
         </h2>
@@ -77,17 +56,11 @@ export function CTASection({ className }: { className?: string }) {
             </Button>
           </a>
         </div>
-      </motion.div>
+      </div>
 
       {/* Benefits Grid */}
-      <motion.div
-        variants={stagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-8 mb-16"
-      >
-        <motion.div variants={fadeInUp} className="text-center space-y-4">
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="text-center space-y-4">
           <div className="w-12 h-12 bg-green-500/10 border border-green-500/20 mx-auto flex items-center justify-center">
             <IconBolt className="w-6 h-6 text-green-400" />
           </div>
@@ -96,9 +69,9 @@ export function CTASection({ className }: { className?: string }) {
             Handle variable AI costs elegantly with credits. Serve users in 180+
             countries with automatic tax compliance as your Merchant of Record.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div variants={fadeInUp} className="text-center space-y-4">
+        <div className="text-center space-y-4">
           <div className="w-12 h-12 bg-purple-500/10 border border-purple-500/20 mx-auto flex items-center justify-center">
             <IconRocket className="w-6 h-6 text-purple-400" />
           </div>
@@ -107,9 +80,9 @@ export function CTASection({ className }: { className?: string }) {
             Boost revenue with automated rewards, streaks, and incentives that
             increase repeat purchases.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div variants={fadeInUp} className="text-center space-y-4">
+        <div className="text-center space-y-4">
           <div className="w-12 h-12 bg-cyan-500/10 border border-cyan-500/20 mx-auto flex items-center justify-center">
             <IconUsers className="w-6 h-6 text-cyan-400" />
           </div>
@@ -118,17 +91,11 @@ export function CTASection({ className }: { className?: string }) {
             We handle VAT, sales tax, and all legal liability across every
             country where you sell.
           </p>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {/* Final Stats */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-center"
-      >
+      <div className="text-center">
         <div className="inline-flex items-center space-x-8 text-sm text-gray-500">
           <div>
             <span className="text-white font-medium">180+</span> countries
@@ -140,7 +107,7 @@ export function CTASection({ className }: { className?: string }) {
             <span className="text-white font-medium">100%</span> tax compliant
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

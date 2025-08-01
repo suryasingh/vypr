@@ -2,28 +2,13 @@
 
 import {
   IconBolt,
-  IconCoin,
-  IconTrophy,
   IconChartBar,
   IconCode,
+  IconCoin,
   IconShield,
+  IconTrophy,
 } from "@tabler/icons-react";
-import { motion } from "framer-motion";
 import { FlickeringGrid } from "../magicui/flickering-grid";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export function FeaturesSection() {
   return (
@@ -40,13 +25,7 @@ export function FeaturesSection() {
           height={1000}
           width={1400}
         />
-        <motion.div
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          className="text-center relative z-10"
-        >
+        <div className="text-center relative z-10">
           <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
             Built for scale. Designed for speed.
           </h2>
@@ -55,17 +34,11 @@ export function FeaturesSection() {
             credits, accelerate user growth with retention features—all while
             serving users globally.
           </p>
-        </motion.div>
+        </div>
       </div>
 
       {/* Main Features Grid */}
-      <motion.div
-        variants={stagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="grid lg:grid-cols-2"
-      >
+      <div className="grid lg:grid-cols-2">
         {/* Credit Infrastructure */}
         <div className="bg-white/[0.01] border border-l-0 border-b-0 border-r-0 border-white/5 p-8 group transition-all duration-300 hover:bg-white/[0.02]">
           <div className="flex items-center space-x-3 mb-6">
@@ -173,16 +146,10 @@ export function FeaturesSection() {
             Proven 85% revenue growth boost
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Secondary Features */}
-      <motion.div
-        variants={stagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="grid md:grid-cols-3"
-      >
+      <div className="grid md:grid-cols-3">
         {/* Analytics Dashboard */}
         <div className="bg-white/[0.01] border border-r-0 border-b-0 border-l-0 border-white/5 p-6  transition-all duration-300">
           <div className="flex items-center space-x-3 mb-6">
@@ -362,7 +329,7 @@ export function FeaturesSection() {
 
           <div className="text-xs text-red-400">99.9% uptime SLA</div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

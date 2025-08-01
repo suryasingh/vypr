@@ -54,8 +54,8 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-background text-white">
       <Navigation />
 
-      <main className="max-w-7xl mx-auto border-l border-r border-border/80 min-h-screen pt-16">
-        <div className="relative px-6 pt-16 pb-16 overflow-hidden">
+      <main className="w-full sm:max-w-7xl sm:mx-auto sm:border-l sm:border-r border-border/80 min-h-screen pt-16">
+        <div className="relative px-4 sm:px-6 lg:px-14 pt-12 sm:pt-16 pb-12 sm:pb-16 overflow-hidden">
           {/* Background FlickeringGrid */}
           <FlickeringGrid
             className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
@@ -68,14 +68,14 @@ export default async function BlogPage() {
             width={1400}
           />
 
-          <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <div className="relative z-10 max-w-4xl mx-auto text-left lg:text-center">
             {/* Main Title */}
-            <h1 className="text-6xl lg:text-7xl xl:text-8xl font-medium text-white mb-8 tracking-tight leading-none">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-medium text-white mb-6 sm:mb-8 tracking-tight leading-none">
               Blog
             </h1>
 
             {/* Description */}
-            <p className="text-2xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
               Insights, guides, and updates on{" "}
               <span className="text-white font-normal">
                 AI app monetization
@@ -89,7 +89,7 @@ export default async function BlogPage() {
             </p>
 
             {/* Stats */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mt-12">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8 sm:mt-12">
               <div className="text-sm text-gray-500">
                 <span className="text-white font-medium">{posts.length}</span>{" "}
                 articles
@@ -106,7 +106,7 @@ export default async function BlogPage() {
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-20 pt-0">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-6 lg:px-14 py-12 sm:py-16 lg:py-20 pt-0">
           {posts.map((post) => {
             const iconColor = getPostColor(post.slug);
 
@@ -130,9 +130,9 @@ export default async function BlogPage() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
+                  <div className="p-4 sm:p-6">
                     {/* Title */}
-                    <h2 className="text-xl font-medium text-white mb-3 leading-tight group-hover:text-gray-200 transition-colors duration-200">
+                    <h2 className="text-lg sm:text-xl font-medium text-white mb-3 leading-tight group-hover:text-gray-200 transition-colors duration-200">
                       {post.title}
                     </h2>
 
@@ -142,7 +142,7 @@ export default async function BlogPage() {
                     </p>
 
                     {/* Meta */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <span className="text-xs text-gray-500">
                         {formatDate(post.date)}
                       </span>

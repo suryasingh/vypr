@@ -6,16 +6,19 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: true,
 });
 
 export const metadata: Metadata = {
   title: "VibePay - Credit Systems & Growth Infrastructure",
-  description: "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+  description:
+    "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
 };
 
 export default function RootLayout({

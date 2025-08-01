@@ -14,7 +14,7 @@ export function FeaturesSection() {
   return (
     <section className="pb-0 relative border-t border-white/5" id="features">
       {/* Section Header */}
-      <div className="relative z-10 pt-28 pb-20">
+      <div className="relative z-10 pt-16 sm:pt-20 lg:pt-28 pb-12 lg:pb-20">
         <FlickeringGrid
           className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
           squareSize={4}
@@ -25,11 +25,11 @@ export function FeaturesSection() {
           height={1000}
           width={1400}
         />
-        <div className="text-center relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+        <div className="text-left lg:text-center relative z-10 px-4 sm:px-8 lg:px-14">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
             Built for scale. Designed for speed.
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-400 max-w-2xl lg:mx-auto">
             Complete infrastructure for AI apps. Handle variable costs with
             credits, accelerate user growth with retention features—all while
             serving users globally.

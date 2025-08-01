@@ -10,18 +10,6 @@ export const metadata = {
 export default function TermsPage() {
   return (
     <div className="min-h-screen overflow-x-hidden relative">
-      {/* Background Grid */}
-      <div
-        className="fixed inset-0 opacity-20 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "32px 32px",
-        }}
-      />
-
       <Navigation />
 
       {/* Main Content Container */}
@@ -33,8 +21,8 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              The terms and conditions governing your use of VibePay&apos;s merchant
-              of record services.
+              The terms and conditions governing your use of VibePay&apos;s
+              merchant of record services.
             </p>
             <div className="text-sm text-gray-500 mt-4">
               Last updated: December 2024
@@ -53,9 +41,10 @@ export default function TermsPage() {
           >
             <h2>Agreement to Terms</h2>
             <p>
-              By accessing or using VibePay&apos;s services, you agree to be bound by
-              these Terms of Service (&quot;Terms&quot;). If you disagree with any part of
-              these terms, you may not access our services.
+              By accessing or using VibePay&apos;s services, you agree to be
+              bound by these Terms of Service (&quot;Terms&quot;). If you
+              disagree with any part of these terms, you may not access our
+              services.
             </p>
             <p>
               These Terms constitute a legally binding agreement between you and
@@ -161,8 +150,8 @@ export default function TermsPage() {
 
             <h2>Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, VibePay&apos;s liability is
-              limited to direct damages not exceeding the fees paid by you in
+              To the maximum extent permitted by law, VibePay&apos;s liability
+              is limited to direct damages not exceeding the fees paid by you in
               the 12 months preceding the claim.
             </p>
             <p>
@@ -173,16 +162,16 @@ export default function TermsPage() {
 
             <h2>Disclaimers</h2>
             <p>
-              Our services are provided &quot;as is&quot; without warranties of any kind.
-              We disclaim all warranties, express or implied, including
-              merchantability, fitness for a particular purpose, and
+              Our services are provided &quot;as is&quot; without warranties of
+              any kind. We disclaim all warranties, express or implied,
+              including merchantability, fitness for a particular purpose, and
               non-infringement.
             </p>
 
             <h2>Termination</h2>
             <p>
-              Either party may terminate this agreement with 30 days&apos; written
-              notice. We may terminate immediately for breach of terms,
+              Either party may terminate this agreement with 30 days&apos;
+              written notice. We may terminate immediately for breach of terms,
               regulatory requirements, or risk management purposes.
             </p>
             <p>

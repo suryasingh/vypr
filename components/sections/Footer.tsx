@@ -6,17 +6,17 @@ import { cn } from "@/lib/utils";
 
 export function Footer({ className }: { className?: string }) {
   return (
-    <footer className={cn("py-20 pb-8 border-t border-border/40", className)}>
-        <div className="grid md:grid-cols-4 gap-8 mb-12 px-14">
+    <footer className={cn("py-12 sm:py-16 lg:py-20 pb-8 border-t border-border/40", className)}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 mb-12 px-4 sm:px-8 lg:px-14">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3">
               <div className="w-6 h-6 bg-white border border-white/20 flex items-center justify-center">
                 <div className="w-2 h-2 bg-black"></div>
               </div>
               <div className="text-xl font-medium text-white">VibePay</div>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
               Credit systems with global compliance built-in. As your Merchant 
               of Record, we handle taxes across 180+ countries so you can focus 
               on building.
@@ -67,7 +67,7 @@ export function Footer({ className }: { className?: string }) {
                 </a>
               </li> */}
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/blog" className="hover:text-white transition-colors">
                   Blog
                 </a>
               </li>
@@ -114,9 +114,9 @@ export function Footer({ className }: { className?: string }) {
 
         <Separator className="bg-border/40" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between mt-8 text-sm text-gray-500 px-14">
-          <div>Built with ❤️ for global developers</div>
-          <div className="flex items-center space-x-6">
+        <div className="flex flex-col md:flex-row items-center justify-between mt-8 text-sm text-gray-500 px-4 sm:px-8 lg:px-14 gap-4 md:gap-0">
+          <div className="text-center md:text-left">Built with ❤️ for global developers</div>
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 lg:gap-6">
             <span>180+ Countries</span>
             <span>100% Tax Compliant</span>
             <span>MoR Certified</span>

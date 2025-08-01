@@ -2,59 +2,59 @@
 
 export function SocialProofSection() {
   return (
-    <section className="py-28 relative border-t border-border/40 px-14">
+    <section className="py-16 sm:py-20 lg:py-28 relative border-t border-border/40 px-4 sm:px-8 lg:px-14">
       {/* Section Header */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+      <div className="text-left lg:text-center mb-12 lg:mb-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
           AI app developers love credits + growth
         </h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-400 max-w-2xl lg:mx-auto">
           Join developers building engaging AI apps with credits, growth
           features, and global reach
         </p>
       </div>
 
       {/* Stats Grid */}
-      <div className="grid md:grid-cols-4 gap-8 mb-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-20">
         <div className="text-center">
-          <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-2">
             50M+
           </div>
-          <div className="text-gray-400">AI Requests Processed</div>
+          <div className="text-sm sm:text-base text-gray-400">AI Requests Processed</div>
         </div>
         <div className="text-center">
-          <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-2">
             180+
           </div>
-          <div className="text-gray-400">Countries Supported</div>
+          <div className="text-sm sm:text-base text-gray-400">Countries Supported</div>
         </div>
         <div className="text-center">
-          <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-2">
             $1.2M+
           </div>
-          <div className="text-gray-400">Global Credit Sales</div>
+          <div className="text-sm sm:text-base text-gray-400">Global Credit Sales</div>
         </div>
         <div className="text-center">
-          <div className="text-3xl lg:text-4xl font-medium text-white mb-2">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-2">
             100%
           </div>
-          <div className="text-gray-400">Tax Compliance</div>
+          <div className="text-sm sm:text-base text-gray-400">Tax Compliance</div>
         </div>
       </div>
 
       {/* Company Logos */}
-      <div className="mb-20">
+      <div className="mb-12 lg:mb-20">
         <div className="text-center mb-12">
           <p className="text-sm text-gray-500 mb-8">
             TRUSTED BY STARTUPS AND ENTERPRISES
           </p>
         </div>
-        <div className="flex items-center justify-center space-x-12 opacity-50">
+        <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-12 opacity-50">
           {["OpenAI", "Vercel", "Linear", "Stripe", "Discord", "Figma"].map(
             (company, i) => (
               <div
                 key={i}
-                className="text-lg font-medium text-gray-400 hover:text-white transition-colors"
+                className="text-base lg:text-lg font-medium text-gray-400 hover:text-white transition-colors"
               >
                 {company}
               </div>
@@ -64,9 +64,9 @@ export function SocialProofSection() {
       </div>
 
       {/* Testimonials */}
-      <div className="grid lg:grid-cols-2 gap-12">
-        <div className="bg-white/[0.01] border border-white/5 p-8">
-          <blockquote className="text-lg text-gray-300 leading-relaxed">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="bg-white/[0.01] border border-white/5 p-6 lg:p-8">
+          <blockquote className="text-base sm:text-lg text-gray-300 leading-relaxed">
             &ldquo;We went from having zero international sales to 60% of our
             revenue coming from Europe and Asia. Users love our AI image
             generator, and VibePay handles all the tax complexity as our
@@ -87,8 +87,8 @@ export function SocialProofSection() {
           </div>
         </div>
 
-        <div className="bg-white/[0.01] border border-white/5 p-8">
-          <blockquote className="text-lg text-gray-300 leading-relaxed">
+        <div className="bg-white/[0.01] border border-white/5 p-6 lg:p-8">
+          <blockquote className="text-base sm:text-lg text-gray-300 leading-relaxed">
             &ldquo;The built-in growth features transformed our app. Users went
             from buying credits once to purchasing 3-4 times per month. The
             reward system and streak bonuses drive retention we never had before

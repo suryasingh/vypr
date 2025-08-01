@@ -5,20 +5,20 @@ import { Button } from "@/components/ui/button";
 
 export function DemoSection() {
   return (
-    <section className="py-28 relative border-t border-border/40 px-14">
+    <section className="py-16 sm:py-20 lg:py-28 relative border-t border-border/40 px-4 sm:px-8 lg:px-14">
       {/* Section Header */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+      <div className="text-left lg:text-center mb-12 lg:mb-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
           Credits + growth for AI apps. Without the complexity.
         </h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-400 max-w-2xl lg:mx-auto">
           Building credit systems and growth features is hard. Adding global
           compliance makes it impossible.
         </p>
       </div>
 
       {/* Comparison Grid */}
-      <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
         {/* Left side - Traditional approach */}
         <div className="space-y-6">
           <div className="space-y-3">
@@ -34,7 +34,7 @@ export function DemoSection() {
           </div>
 
           {/* Development phases */}
-          <div className="bg-white/[0.02] border border-white/10 p-6 space-y-4">
+          <div className="bg-white/[0.02] border border-white/10 p-4 sm:p-6 space-y-4">
             <h4 className="font-medium text-white text-sm mb-7">
               What you need to build:
             </h4>
@@ -50,10 +50,10 @@ export function DemoSection() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0"
+                className="flex items-start sm:items-center justify-between py-2 sm:py-1.5 border-b border-white/5 last:border-0 gap-3"
               >
-                <span className="text-sm text-gray-300">{item.task}</span>
-                <span className="text-xs text-gray-500 font-mono">
+                <span className="text-sm text-gray-300 flex-1">{item.task}</span>
+                <span className="text-xs text-gray-500 font-mono shrink-0">
                   {item.time}
                 </span>
               </div>
@@ -119,12 +119,13 @@ export function DemoSection() {
           </div>
 
           {/* Simple implementation */}
-          <div className="bg-white/[0.02] border border-white/10 p-6 space-y-4">
+          <div className="bg-white/[0.02] border border-white/10 p-4 sm:p-6 space-y-4">
             <h4 className="font-medium text-white text-sm mb-4">
               Your implementation:
             </h4>
             <div className="space-y-4">
-              <pre className="text-sm font-mono leading-relaxed">
+              <div className="overflow-x-auto">
+                <pre className="text-xs sm:text-sm font-mono leading-relaxed whitespace-pre-wrap sm:whitespace-pre">
                 <code>
                   <span className="text-purple-400">import</span>{" "}
                   <span className="text-white">&#123;</span>{" "}
@@ -200,7 +201,8 @@ export function DemoSection() {
                     {`// ✅ Credits, growth & global taxes`}
                   </span>
                 </code>
-              </pre>
+                </pre>
+              </div>
             </div>
           </div>
 
@@ -248,11 +250,11 @@ export function DemoSection() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="text-center mt-16">
+      <div className="text-center mt-12 lg:mt-16">
         <p className="text-gray-400 mb-6">
           Ready to skip months of development?
         </p>
-        <div className="flex items-center justify-center space-x-4">
+        <div className="flex items-center justify-center">
           <BetaAccessModal>
             <Button className="bg-white text-black hover:bg-gray-100 font-medium h-11 px-8">
               Request Beta Access

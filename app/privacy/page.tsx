@@ -9,18 +9,6 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen overflow-x-hidden relative">
-      {/* Background Grid */}
-      <div
-        className="fixed inset-0 opacity-20 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "32px 32px",
-        }}
-      />
-
       <Navigation />
 
       {/* Main Content Container */}
@@ -52,14 +40,15 @@ export default function PrivacyPage() {
           >
             <h2>Introduction</h2>
             <p>
-              VibePay (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your
-              privacy. This Privacy Policy explains how we collect, use,
-              disclose, and safeguard your information when you use our merchant
-              of record services and payment processing platform.
+              VibePay (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is
+              committed to protecting your privacy. This Privacy Policy explains
+              how we collect, use, disclose, and safeguard your information when
+              you use our merchant of record services and payment processing
+              platform.
             </p>
             <p>
-              By using VibePay&apos;s services, you agree to the collection and use
-              of information in accordance with this Privacy Policy.
+              By using VibePay&apos;s services, you agree to the collection and
+              use of information in accordance with this Privacy Policy.
             </p>
 
             <h2>Information We Collect</h2>
@@ -186,7 +175,8 @@ export default function PrivacyPage() {
             <p>
               We may update this Privacy Policy from time to time. We will
               notify you of any material changes by posting the new Privacy
-              Policy on our website and updating the &quot;Last updated&quot; date.
+              Policy on our website and updating the &quot;Last updated&quot;
+              date.
             </p>
 
             <h2>Contact Us</h2>

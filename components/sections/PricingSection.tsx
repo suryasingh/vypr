@@ -6,32 +6,32 @@ import { Button } from "@/components/ui/button";
 export function PricingSection() {
   return (
     <section
-      className="py-28 relative border-t border-border/40 px-14"
+      className="py-16 sm:py-20 lg:py-28 relative border-t border-border/40 px-4 sm:px-8 lg:px-14"
       id="pricing"
     >
       {/* Section Header */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
+      <div className="text-left lg:text-center mb-12 lg:mb-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white mb-4 tracking-tight">
           Global pricing. Zero tax complexity.
         </h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-400 max-w-2xl lg:mx-auto">
           Pay only when you earn. As your Merchant of Record, we handle all
           global taxes, compliance, and regulations automatically.
         </p>
       </div>
 
       {/* Main Pricing Card */}
-      <div className="max-w-2xl mx-auto mb-16">
-        <div className="bg-white/[0.01] border border-white/5 p-8 text-center">
+      <div className="max-w-2xl mx-auto mb-12 lg:mb-16">
+        <div className="bg-white/[0.01] border border-white/5 p-6 lg:p-8 text-center">
           <div className="mb-8">
-            <div className="text-5xl font-medium text-white mb-2">
-              2.9<span className="text-2xl text-gray-400">%</span>
-              <span className="text-lg text-gray-400 ml-2">+ 30¢</span>
+            <div className="text-4xl sm:text-5xl font-medium text-white mb-2">
+              2.9<span className="text-xl sm:text-2xl text-gray-400">%</span>
+              <span className="text-base sm:text-lg text-gray-400 ml-2">+ 30¢</span>
             </div>
             <div className="text-gray-400">Per transaction</div>
           </div>
 
-          <p className="text-gray-300 mb-8 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-300 mb-8 leading-relaxed">
             Only pay when your customers buy credits - from anywhere in the
             world. No setup fees, no VAT headaches, no compliance risk. We
             handle global tax collection as your Merchant of Record.
@@ -46,7 +46,7 @@ export function PricingSection() {
       </div>
 
       {/* Pricing Examples */}
-      <div className="grid md:grid-cols-3 gap-6 mb-16">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 lg:mb-16">
         {[
           {
             scenario: "🇺🇸 US Sale",
@@ -72,7 +72,7 @@ export function PricingSection() {
         ].map((example, index) => (
           <div
             key={index}
-            className="bg-white/[0.01] border border-white/5 p-6"
+            className="bg-white/[0.01] border border-white/5 p-4 sm:p-6"
           >
             <div className="space-y-4">
               <div>

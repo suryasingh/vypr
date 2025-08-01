@@ -6,7 +6,7 @@ import { FlickeringGrid } from "../magicui/flickering-grid";
 
 export function HeroSection() {
   return (
-    <section className="pt-28 pb-32 relative px-6 sm:px-14">
+    <section className="pt-20 pb-20 sm:pt-28 sm:pb-32 relative px-4 sm:px-8 lg:px-14">
       <FlickeringGrid
         className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
         squareSize={4}
@@ -17,9 +17,9 @@ export function HeroSection() {
         height={1000}
         width={1400}
       />
-      <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
         {/* Left side - Main content */}
-        <div className="space-y-8">
+        <div className="space-y-6 lg:space-y-8">
           {/* Status indicator */}
           <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10">
             <div className="w-2 h-2 bg-orange-400 mr-3" />
@@ -30,7 +30,7 @@ export function HeroSection() {
 
           {/* Main headline */}
           <div className="space-y-6">
-            <h1 className="text-6xl lg:text-7xl font-medium text-white leading-[0.9] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[0.9] tracking-tight">
               Credits + growth
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
@@ -40,7 +40,7 @@ export function HeroSection() {
               <span className="text-gray-400">Global by default.</span>
             </h1>
 
-            <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
+            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-lg">
               Handle variable AI costs with credits, accelerate user growth with
               built-in retention features, and sell globally—all with a single
               API. We&apos;re your Merchant of Record.
@@ -48,7 +48,7 @@ export function HeroSection() {
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <BetaAccessModal>
               <Button className="cursor-pointer font-medium h-12 px-8 text-base">
                 Request Beta Access
@@ -75,7 +75,7 @@ export function HeroSection() {
         </div>
 
         {/* Right side - Clean product showcase */}
-        <div className="relative">
+        <div className="relative mt-8 lg:mt-0">
           {/* Main dashboard mockup */}
           <div className="bg-white/[0.02] backdrop-blur border border-border/60 rounded-lg overflow-hidden shadow-2xl">
             {/* Window chrome */}
@@ -92,7 +92,7 @@ export function HeroSection() {
             </div>
 
             {/* Dashboard content */}
-            <div className="p-8 space-y-8">
+            <div className="p-4 sm:p-6 lg:p-8 space-y-6 lg:space-y-8">
               {/* Header with AI + gamification focus */}
               <div className="flex items-start justify-between">
                 <div className="space-y-1">
@@ -110,7 +110,7 @@ export function HeroSection() {
               </div>
 
               {/* AI + gamification metrics */}
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
                 <div className="space-y-2">
                   <div className="text-xs text-gray-500 uppercase tracking-wide">
                     Active Users
@@ -197,7 +197,7 @@ export function HeroSection() {
           </div>
 
           {/* Floating code snippet - more refined */}
-          <div className="absolute -bottom-8 -left-8 bg-background/80 border rounded-lg p-5 shadow-2xl max-w-xs backdrop-blur">
+          <div className="hidden lg:block absolute -bottom-8 -left-8 bg-background/80 border rounded-lg p-5 shadow-2xl max-w-xs backdrop-blur">
             <div className="flex items-center justify-between mb-3">
               <div className="text-xs text-gray-400 font-medium">
                 Integration

@@ -30,7 +30,7 @@ export function HeroSection() {
 
           {/* Main headline */}
           <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[0.9] tracking-tight">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[0.9] tracking-tight">
               Credits + growth
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">

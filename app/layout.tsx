@@ -19,6 +19,19 @@ export const metadata: Metadata = {
   title: "VibePay - Credit Systems & Growth Infrastructure",
   description:
     "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+  openGraph: {
+    title: "VibePay - Credit Systems & Growth Infrastructure",
+    description:
+      "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+    images: ["/vibe-pay-og.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "VibePay - Credit Systems & Growth Infrastructure",
+    description:
+      "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+    images: ["/vibe-pay-og.jpg"],
+  },
 };
 
 export default function RootLayout({

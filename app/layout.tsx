@@ -16,20 +16,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VibePay - Credit Systems & Growth Infrastructure",
+  title: "Vypr - Infrastructure for Agentic Commerce",
   description:
-    "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+    "Build, deploy, and scale AI agents that can transact, negotiate, and execute commerce autonomously. The infrastructure for agentic commerce.",
   openGraph: {
-    title: "VibePay - Credit Systems & Growth Infrastructure",
+    title: "Vypr - Infrastructure for Agentic Commerce",
     description:
-      "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+      "Build, deploy, and scale AI agents that can transact, negotiate, and execute commerce autonomously. The infrastructure for agentic commerce.",
     images: ["/vibe-pay-og.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VibePay - Credit Systems & Growth Infrastructure",
+    title: "Vypr - Infrastructure for Agentic Commerce",
     description:
-      "Add credit systems and growth features to your AI app in 5 minutes. As your Merchant of Record, we handle global taxes and compliance across 180+ countries so you can focus on building.",
+      "Build, deploy, and scale AI agents that can transact, negotiate, and execute commerce autonomously. The infrastructure for agentic commerce.",
     images: ["/vibe-pay-og.webp"],
   },
 };

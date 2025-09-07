@@ -24,7 +24,7 @@ export function Navigation() {
 
             {/* Brand Name */}
             <div className="flex items-center space-x-2">
-              <div className="text-xl font-medium text-white">VibePay</div>
+              <div className="text-xl font-medium text-white">Vypr</div>
               <div className="hidden sm:block px-2 py-0.5 bg-white/10 border border-white/20 text-xs text-gray-300 font-medium">
                 BETA
               </div>
@@ -65,12 +65,12 @@ export function Navigation() {
 
             {/* Desktop Actions */}
             <div className="hidden sm:flex items-center space-x-4">
-              <Link
+              {/* <Link
                 href="/blog"
                 className="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-200"
               >
                 Blog
-              </Link>
+              </Link> */}
               <a
                 href="https://cal.com/vibepay"
                 target="_blank"

@@ -91,9 +91,9 @@ export function BetaAccessModal({ children }: BetaAccessModalProps) {
             Join the Beta
           </DialogTitle>
           <DialogDescription className="text-center text-gray-400 text-lg">
-            Get early access to VibePay and start monetizing your AI app with{" "}
-            <span className="text-purple-400">credits</span> +{" "}
-            <span className="text-green-400">growth</span>.
+            Get early access to Vypr and start building agentic commerce with{" "}
+            <span className="text-purple-400">autonomous</span> +{" "}
+            <span className="text-green-400">intelligent</span> agents.
           </DialogDescription>
         </DialogHeader>
         

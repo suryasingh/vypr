@@ -36,7 +36,7 @@ export default function Home() {
           <h1 className="text-6xl lg:text-7xl xl:text-8xl font-medium text-white leading-[0.9] tracking-tight">
             The infrastructure
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+            <span className="">
               for agentic commerce.
             </span>
           </h1>
@@ -54,7 +54,7 @@ export default function Home() {
               </Button>
             </BetaAccessModal>
             <a
-              href="https://cal.com/vibepay"
+              href="https://cal.com/vypr.sh"
               target="_blank"
               rel="noopener noreferrer"
             >

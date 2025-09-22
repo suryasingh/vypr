@@ -72,7 +72,7 @@ export function Navigation() {
                 Blog
               </Link> */}
               <a
-                href="https://cal.com/vibepay"
+                href="https://cal.com/vypr.sh"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -104,15 +104,15 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="sm:hidden border-t border-border/40 mt-3 pt-4 pb-2">
             <div className="flex flex-col space-y-3">
-              <Link
+              {/* <Link
                 href="/blog"
                 className="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-200 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Blog
-              </Link>
+              </Link> */}
               <a
-                href="https://cal.com/vibepay"
+                href="https://cal.com/vypr.sh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-200 py-2"

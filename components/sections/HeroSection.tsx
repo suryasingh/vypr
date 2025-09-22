@@ -55,7 +55,7 @@ export function HeroSection() {
               </Button>
             </BetaAccessModal>
             <a
-              href="https://cal.com/vibepay"
+              href="https://cal.com/vypr.sh"
               target="_blank"
               rel="noopener noreferrer"
             >

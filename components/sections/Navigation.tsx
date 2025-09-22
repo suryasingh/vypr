@@ -25,9 +25,9 @@ export function Navigation() {
             {/* Brand Name */}
             <div className="flex items-center space-x-2">
               <div className="text-xl font-medium text-white">Vypr</div>
-              <div className="hidden sm:block px-2 py-0.5 bg-white/10 border border-white/20 text-xs text-gray-300 font-medium">
+              {/* <div className="hidden sm:block px-2 py-0.5 bg-white/10 border border-white/20 text-xs text-gray-300 font-medium">
                 BETA
-              </div>
+              </div> */}
             </div>
           </Link>
 

@@ -13,24 +13,24 @@ export default function Home() {
       {/* Minimal Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative px-4 sm:px-8">
         <FlickeringGrid
-          className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+          className="absolute inset-0 z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)] overflow-hidden"
           squareSize={4}
           gridGap={6}
           color="#FFFFFF"
-          maxOpacity={0.08}
-          flickerChance={0.1}
+          maxOpacity={0.09}
+          flickerChance={0.8}
           height={1000}
           width={1400}
         />
         
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
           {/* Status indicator */}
-          <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10 rounded-full">
+          {/* <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10 rounded-full">
             <div className="w-2 h-2 bg-orange-400 mr-3 rounded-full" />
             <span className="text-sm text-gray-300 font-medium">
               Infrastructure for Agentic Commerce
             </span>
-          </div>
+          </div> */}
 
           {/* Main headline */}
           <h1 className="text-6xl lg:text-7xl xl:text-8xl font-medium text-white leading-[0.9] tracking-tight">
